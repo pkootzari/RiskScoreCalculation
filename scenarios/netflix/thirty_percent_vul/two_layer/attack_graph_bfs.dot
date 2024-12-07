@@ -1,0 +1,24 @@
+digraph G {
+attacker -> C1_zuul [label=1];
+attacker -> C2_zuul [label=1];
+C1_zuul -> C1_eureka [label=1];
+C1_zuul -> C1_VM1 [label=2];
+C2_zuul -> C2_eureka [label=1];
+C2_zuul -> C2_VM1 [label=2];
+C1_eureka -> C1_servicea [label=1];
+C1_eureka -> C1_VM2 [label=2];
+C1_VM1 -> C1_hystrixdashboard [label=3];
+C1_VM1 -> C1_rabbitmq [label=3];
+C1_VM1 -> C1_VM2 [label=1];
+C2_eureka -> C2_servicec [label=1];
+C2_eureka -> C2_springclouddashboard [label=1];
+C2_eureka -> C2_VM1 [label=2];
+C2_VM1 -> C2_configservice [label=3];
+C2_VM1 -> C2_VM2 [label=1];
+C1_servicea -> C1_rabbitmq [label=1];
+C1_servicea -> C1_VM2 [label=2];
+C2_servicec -> C2_configservice [label=1];
+C2_servicec -> C2_springclouddashboard [label=1];
+C2_servicec -> C2_VM2 [label=2];
+C2_springclouddashboard -> C2_VM2 [label=2];
+}

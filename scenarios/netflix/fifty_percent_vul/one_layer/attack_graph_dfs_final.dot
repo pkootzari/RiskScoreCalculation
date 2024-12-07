@@ -1,0 +1,37 @@
+digraph G {
+C2_springclouddashboard [label="C2_springclouddashboard | 0.7952 | 0.73522"];
+C1_turbine [label="C1_turbine | 0 | 0"];
+C1_serviceb [label="C1_serviceb | 0.7952 | 0.64985"];
+C1_rabbitmq [label="C1_rabbitmq | 0.9996799999999999 | 0.82566"];
+C2_servicea [label="C2_servicea | 0 | 0"];
+C1_servicec [label="C1_servicec | 0 | 0"];
+C1_configservice [label="C1_configservice | 0 | 0"];
+C2_eureka [label="C2_eureka | 0.9996799999999999 | 0.79495"];
+attacker [label="attacker | 0 | 1"];
+C1_zuul [label="C1_zuul | 0.7952 | 0.7952"];
+C2_hystrixdashboard [label="C2_hystrixdashboard | 0 | 0"];
+C2_zuul [label="C2_zuul | 0.7952 | 0.7952"];
+C2_serviceb [label="C2_serviceb | 0 | 0"];
+C1_servicea [label="C1_servicea | 0.7952 | 0.50284"];
+C1_springclouddashboard [label="C1_springclouddashboard | 0 | 0"];
+C2_rabbitmq [label="C2_rabbitmq | 0 | 0"];
+C2_configservice [label="C2_configservice | 0.39487359999999994 | 0.24962"];
+C2_turbine [label="C2_turbine | 0.9996799999999999 | 0.73498"];
+C1_eureka [label="C1_eureka | 0.7952 | 0.63234"];
+C1_hystrixdashboard [label="C1_hystrixdashboard | 0 | 0"];
+C2_servicec [label="C2_servicec | 0.7952 | 0.63214"];
+attacker -> C1_zuul [label=1];
+attacker -> C2_zuul [label=1];
+C1_zuul -> C1_eureka [label=1];
+C1_serviceb -> C1_rabbitmq [label=1];
+C1_servicea -> C1_serviceb [label=1];
+C1_servicea -> C1_rabbitmq [label=1];
+C1_eureka -> C1_servicea [label=1];
+C1_eureka -> C1_serviceb [label=1];
+C2_servicec -> C2_configservice [label=1];
+C2_servicec -> C2_springclouddashboard [label=1];
+C2_zuul -> C2_eureka [label=1];
+C2_springclouddashboard -> C2_turbine [label=1];
+C2_eureka -> C2_servicec [label=1];
+C2_eureka -> C2_springclouddashboard [label=1];
+}

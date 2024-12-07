@@ -1,0 +1,29 @@
+{
+    "cumulative_probs_bfs": {
+        "attacker": 1,
+        "C1_configservice": 0,
+        "C2_springclouddashboard": 0,
+        "C1_zuul": 0.85,
+        "C2_zuul": 0.85,
+        "C1_eureka": 0.6375,
+        "C2_eureka": 0.7565,
+        "C1_servicea": 0.47812,
+        "C1_servicec": 0.6892,
+        "C1_serviceb": 0.71531,
+        "C2_servicea": 0.56737,
+        "C2_servicec": 0.79624,
+        "C2_serviceb": 0.8024,
+        "C1_springclouddashboard": 0.80627,
+        "C1_turbine": 0.67727,
+        "C2_rabbitmq": 0.84502,
+        "C1_hystrixdashboard": 0.53504,
+        "C2_turbine": 0.71827,
+        "C1_VM1": 0.80223,
+        "C1_rabbitmq": 0.81758,
+        "C1_VM2": 0.7495,
+        "C2_hystrixdashboard": 0.5387,
+        "C2_VM1": 0.86981,
+        "C2_configservice": 0.75828,
+        "C2_VM2": 0.83372
+    }
+}

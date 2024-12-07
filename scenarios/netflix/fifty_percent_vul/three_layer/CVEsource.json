@@ -1,0 +1,2504 @@
+[
+  {
+    "cve" : {
+      "data_type" : "CVE",
+      "data_format" : "MITRE",
+      "data_version" : "4.0",
+      "CVE_data_meta" : {
+        "ID" : "CVE-2023-26482",
+        "ASSIGNER" : "security-advisories@github.com"
+      },
+      "problemtype" : {
+        "problemtype_data" : [ {
+          "description" : [ {
+            "lang" : "en",
+            "value" : "NVD-CWE-noinfo"
+          } ]
+        } ]
+      },
+      "references" : {
+        "reference_data" : [ {
+          "url" : "https://github.com/nextcloud/security-advisories/security/advisories/GHSA-h3c9-cmh8-7qpj",
+          "name" : "https://github.com/nextcloud/security-advisories/security/advisories/GHSA-h3c9-cmh8-7qpj",
+          "refsource" : "MISC",
+          "tags" : [ "Vendor Advisory" ]
+        }, {
+          "url" : "https://github.com/nextcloud/server/commit/5a06b50b10cc9278bbe68bbf897a0c4aeb0c4e60",
+          "name" : "https://github.com/nextcloud/server/commit/5a06b50b10cc9278bbe68bbf897a0c4aeb0c4e60",
+          "refsource" : "MISC",
+          "tags" : [ "Patch" ]
+        } ]
+      },
+      "description" : {
+        "description_data" : [ {
+          "lang" : "en",
+          "value" : "Nextcloud server is an open source home cloud implementation. In affected versions a missing scope validation allowed users to create workflows which are designed to be only available for administrators. Some workflows are designed to be RCE by invoking defined scripts, in order to generate PDFs, invoking webhooks or running scripts on the server. Due to this combination depending on the available apps the issue can result in a RCE at the end. It is recommended that the Nextcloud Server is upgraded to 24.0.10 or 25.0.4. Users unable to upgrade should disable app `workflow_scripts` and `workflow_pdf_converter` as a mitigation."
+        } ]
+      }
+    },
+    "configurations" : {
+      "CVE_data_version" : "4.0",
+      "nodes" : [ {
+        "operator" : "OR",
+        "children" : [ ],
+        "cpe_match" : [ {
+          "vulnerable" : true,
+          "cpe23Uri" : "cpe:2.3:a:nextcloud:nextcloud_server:*:*:*:*:enterprise:*:*:*",
+          "versionStartIncluding" : "23.0.0",
+          "versionEndExcluding" : "23.0.12.5",
+          "cpe_name" : [ ]
+        }, {
+          "vulnerable" : true,
+          "cpe23Uri" : "cpe:2.3:a:nextcloud:nextcloud_server:*:*:*:*:enterprise:*:*:*",
+          "versionStartIncluding" : "25.0.0",
+          "versionEndExcluding" : "25.0.4",
+          "cpe_name" : [ ]
+        }, {
+          "vulnerable" : true,
+          "cpe23Uri" : "cpe:2.3:a:nextcloud:nextcloud_server:*:*:*:*:enterprise:*:*:*",
+          "versionStartIncluding" : "24.0.0",
+          "versionEndExcluding" : "24.0.10",
+          "cpe_name" : [ ]
+        }, {
+          "vulnerable" : true,
+          "cpe23Uri" : "cpe:2.3:a:nextcloud:nextcloud_server:*:*:*:*:enterprise:*:*:*",
+          "versionStartIncluding" : "21.0.0",
+          "versionEndExcluding" : "21.0.9.10",
+          "cpe_name" : [ ]
+        }, {
+          "vulnerable" : true,
+          "cpe23Uri" : "cpe:2.3:a:nextcloud:nextcloud_server:*:*:*:*:enterprise:*:*:*",
+          "versionStartIncluding" : "22.0.0",
+          "versionEndExcluding" : "22.2.10.10",
+          "cpe_name" : [ ]
+        }, {
+          "vulnerable" : true,
+          "cpe23Uri" : "cpe:2.3:a:nextcloud:nextcloud_server:*:*:*:*:-:*:*:*",
+          "versionStartIncluding" : "24.0.0",
+          "versionEndExcluding" : "24.0.10",
+          "cpe_name" : [ ]
+        }, {
+          "vulnerable" : true,
+          "cpe23Uri" : "cpe:2.3:a:nextcloud:nextcloud_server:*:*:*:*:-:*:*:*",
+          "versionStartIncluding" : "25.0.0",
+          "versionEndExcluding" : "25.0.4",
+          "cpe_name" : [ ]
+        }, {
+          "vulnerable" : true,
+          "cpe23Uri" : "cpe:2.3:a:nextcloud:nextcloud_server:*:*:*:*:enterprise:*:*:*",
+          "versionStartIncluding" : "18.0.0",
+          "versionEndExcluding" : "20.0.14.12",
+          "cpe_name" : [ ]
+        } ]
+      } ]
+    },
+    "impact" : {
+      "baseMetricV3" : {
+        "cvssV3" : {
+          "version" : "3.1",
+          "vectorString" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "attackVector" : "NETWORK",
+          "attackComplexity" : "LOW",
+          "privilegesRequired" : "LOW",
+          "userInteraction" : "NONE",
+          "scope" : "UNCHANGED",
+          "confidentialityImpact" : "HIGH",
+          "integrityImpact" : "HIGH",
+          "availabilityImpact" : "HIGH",
+          "baseScore" : 8.8,
+          "baseSeverity" : "HIGH"
+        },
+        "exploitabilityScore" : 2.8,
+        "impactScore" : 5.9
+      }
+    },
+    "publishedDate" : "2023-03-30T19:15Z",
+    "lastModifiedDate" : "2023-04-06T18:49Z"
+  },
+  {
+    "cve" : {
+      "data_type" : "CVE",
+      "data_format" : "MITRE",
+      "data_version" : "4.0",
+      "CVE_data_meta" : {
+        "ID" : "CVE-2023-49070",
+        "ASSIGNER" : "security@apache.org"
+      },
+      "problemtype" : {
+        "problemtype_data" : [ {
+          "description" : [ {
+            "lang" : "en",
+            "value" : "CWE-94"
+          } ]
+        } ]
+      },
+      "references" : {
+        "reference_data" : [ {
+          "url" : "https://ofbiz.apache.org/download.html",
+          "name" : "https://ofbiz.apache.org/download.html",
+          "refsource" : "",
+          "tags" : [ "Product" ]
+        }, {
+          "url" : "https://ofbiz.apache.org/security.html",
+          "name" : "https://ofbiz.apache.org/security.html",
+          "refsource" : "",
+          "tags" : [ "Vendor Advisory" ]
+        }, {
+          "url" : "https://ofbiz.apache.org/release-notes-18.12.10.html",
+          "name" : "https://ofbiz.apache.org/release-notes-18.12.10.html",
+          "refsource" : "",
+          "tags" : [ "Release Notes" ]
+        }, {
+          "url" : "https://issues.apache.org/jira/browse/OFBIZ-12812",
+          "name" : "https://issues.apache.org/jira/browse/OFBIZ-12812",
+          "refsource" : "",
+          "tags" : [ "Issue Tracking", "Patch" ]
+        }, {
+          "url" : "https://lists.apache.org/thread/jmbqk2lp4t4483whzndp5xqlq4f3otg3",
+          "name" : "https://lists.apache.org/thread/jmbqk2lp4t4483whzndp5xqlq4f3otg3",
+          "refsource" : "",
+          "tags" : [ "Mailing List" ]
+        }, {
+          "url" : "http://packetstormsecurity.com/files/176323/Apache-OFBiz-18.12.09-Remote-Code-Execution.html",
+          "name" : "http://packetstormsecurity.com/files/176323/Apache-OFBiz-18.12.09-Remote-Code-Execution.html",
+          "refsource" : "",
+          "tags" : [ ]
+        } ]
+      },
+      "description" : {
+        "description_data" : [ {
+          "lang" : "en",
+          "value" : "\nPre-auth RCE in Apache Ofbiz 18.12.09.\n\nIt's due to XML-RPC no longer maintained still present.\nThis issue affects Apache OFBiz: before 18.12.10. \nUsers are recommended to upgrade to version 18.12.10\n\n"
+        } ]
+      }
+    },
+    "configurations" : {
+      "CVE_data_version" : "4.0",
+      "nodes" : [ {
+        "operator" : "OR",
+        "children" : [ ],
+        "cpe_match" : [ {
+          "vulnerable" : true,
+          "cpe23Uri" : "cpe:2.3:a:apache:ofbiz:*:*:*:*:*:*:*:*",
+          "versionEndExcluding" : "18.12.10",
+          "cpe_name" : [ ]
+        } ]
+      } ]
+    },
+    "impact" : {
+      "baseMetricV3" : {
+        "cvssV3" : {
+          "version" : "3.1",
+          "vectorString" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "attackVector" : "NETWORK",
+          "attackComplexity" : "LOW",
+          "privilegesRequired" : "NONE",
+          "userInteraction" : "NONE",
+          "scope" : "UNCHANGED",
+          "confidentialityImpact" : "HIGH",
+          "integrityImpact" : "HIGH",
+          "availabilityImpact" : "HIGH",
+          "baseScore" : 9.8,
+          "baseSeverity" : "CRITICAL"
+        },
+        "exploitabilityScore" : 3.9,
+        "impactScore" : 5.9
+      }
+    },
+    "publishedDate" : "2023-12-05T08:15Z",
+    "lastModifiedDate" : "2023-12-29T18:15Z"
+  },
+  {
+    "cve" : {
+      "data_type" : "CVE",
+      "data_format" : "MITRE",
+      "data_version" : "4.0",
+      "CVE_data_meta" : {
+        "ID" : "CVE-2023-27603",
+        "ASSIGNER" : "security@apache.org"
+      },
+      "problemtype" : {
+        "problemtype_data" : [ {
+          "description" : [ {
+            "lang" : "en",
+            "value" : "CWE-22"
+          } ]
+        } ]
+      },
+      "references" : {
+        "reference_data" : [ {
+          "url" : "https://lists.apache.org/thread/6n1vlvnyn441rm02zdqc0wnpckj8ltn8",
+          "name" : "https://lists.apache.org/thread/6n1vlvnyn441rm02zdqc0wnpckj8ltn8",
+          "refsource" : "MISC",
+          "tags" : [ "Mailing List", "Vendor Advisory" ]
+        }, {
+          "url" : "https://www.openwall.com/lists/oss-security/2023/04/10/2",
+          "name" : "https://www.openwall.com/lists/oss-security/2023/04/10/2",
+          "refsource" : "MISC",
+          "tags" : [ "Mailing List" ]
+        } ]
+      },
+      "description" : {
+        "description_data" : [ {
+          "lang" : "en",
+          "value" : "\n\n\nIn Apache Linkis <=1.3.1, due to the Manager module engineConn material upload does not check the zip path, This is a Zip Slip issue, which will lead to a potential RCE vulnerability.\n\n\nWe recommend users upgrade the version of Linkis to version 1.3.2.\n\n\n\n"
+        } ]
+      }
+    },
+    "configurations" : {
+      "CVE_data_version" : "4.0",
+      "nodes" : [ {
+        "operator" : "OR",
+        "children" : [ ],
+        "cpe_match" : [ {
+          "vulnerable" : true,
+          "cpe23Uri" : "cpe:2.3:a:apache:linkis:*:*:*:*:*:*:*:*",
+          "versionEndIncluding" : "1.3.1",
+          "cpe_name" : [ ]
+        } ]
+      } ]
+    },
+    "impact" : {
+      "baseMetricV3" : {
+        "cvssV3" : {
+          "version" : "3.1",
+          "vectorString" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "attackVector" : "NETWORK",
+          "attackComplexity" : "LOW",
+          "privilegesRequired" : "NONE",
+          "userInteraction" : "NONE",
+          "scope" : "UNCHANGED",
+          "confidentialityImpact" : "HIGH",
+          "integrityImpact" : "HIGH",
+          "availabilityImpact" : "HIGH",
+          "baseScore" : 9.8,
+          "baseSeverity" : "CRITICAL"
+        },
+        "exploitabilityScore" : 3.9,
+        "impactScore" : 5.9
+      }
+    },
+    "publishedDate" : "2023-04-10T08:15Z",
+    "lastModifiedDate" : "2024-10-22T16:35Z"
+  },
+  {
+    "cve" : {
+      "data_type" : "CVE",
+      "data_format" : "MITRE",
+      "data_version" : "4.0",
+      "CVE_data_meta" : {
+        "ID" : "CVE-2023-39336",
+        "ASSIGNER" : "support@hackerone.com"
+      },
+      "problemtype" : {
+        "problemtype_data" : [ {
+          "description" : [ {
+            "lang" : "en",
+            "value" : "CWE-89"
+          } ]
+        } ]
+      },
+      "references" : {
+        "reference_data" : [ {
+          "url" : "https://forums.ivanti.com/s/article/SA-2023-12-19-CVE-2023-39336?language=en_US",
+          "name" : "https://forums.ivanti.com/s/article/SA-2023-12-19-CVE-2023-39336?language=en_US",
+          "refsource" : "",
+          "tags" : [ "Vendor Advisory" ]
+        } ]
+      },
+      "description" : {
+        "description_data" : [ {
+          "lang" : "en",
+          "value" : "An unspecified SQL Injection vulnerability in Ivanti Endpoint Manager released prior to 2022 SU 5 allows an  attacker with access to the internal network to execute arbitrary SQL queries and retrieve output without the need for authentication. Under specific circumstances, this may also lead to RCE on the core server. "
+        } ]
+      }
+    },
+    "configurations" : {
+      "CVE_data_version" : "4.0",
+      "nodes" : [ {
+        "operator" : "OR",
+        "children" : [ ],
+        "cpe_match" : [ {
+          "vulnerable" : true,
+          "cpe23Uri" : "cpe:2.3:a:ivanti:endpoint_manager:2022:su1:*:*:*:*:*:*",
+          "cpe_name" : [ ]
+        }, {
+          "vulnerable" : true,
+          "cpe23Uri" : "cpe:2.3:a:ivanti:endpoint_manager:*:*:*:*:*:*:*:*",
+          "versionEndExcluding" : "2022",
+          "cpe_name" : [ ]
+        }, {
+          "vulnerable" : true,
+          "cpe23Uri" : "cpe:2.3:a:ivanti:endpoint_manager:2022:-:*:*:*:*:*:*",
+          "cpe_name" : [ ]
+        }, {
+          "vulnerable" : true,
+          "cpe23Uri" : "cpe:2.3:a:ivanti:endpoint_manager:2022:su2:*:*:*:*:*:*",
+          "cpe_name" : [ ]
+        }, {
+          "vulnerable" : true,
+          "cpe23Uri" : "cpe:2.3:a:ivanti:endpoint_manager:2022:su3:*:*:*:*:*:*",
+          "cpe_name" : [ ]
+        }, {
+          "vulnerable" : true,
+          "cpe23Uri" : "cpe:2.3:a:ivanti:endpoint_manager:2022:su4:*:*:*:*:*:*",
+          "cpe_name" : [ ]
+        } ]
+      } ]
+    },
+    "impact" : {
+      "baseMetricV3" : {
+        "cvssV3" : {
+          "version" : "3.1",
+          "vectorString" : "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "attackVector" : "ADJACENT_NETWORK",
+          "attackComplexity" : "LOW",
+          "privilegesRequired" : "NONE",
+          "userInteraction" : "NONE",
+          "scope" : "UNCHANGED",
+          "confidentialityImpact" : "HIGH",
+          "integrityImpact" : "HIGH",
+          "availabilityImpact" : "HIGH",
+          "baseScore" : 8.8,
+          "baseSeverity" : "HIGH"
+        },
+        "exploitabilityScore" : 2.8,
+        "impactScore" : 5.9
+      }
+    },
+    "publishedDate" : "2024-01-09T02:15Z",
+    "lastModifiedDate" : "2024-01-12T18:56Z"
+  },
+  {
+    "cve" : {
+      "data_type" : "CVE",
+      "data_format" : "MITRE",
+      "data_version" : "4.0",
+      "CVE_data_meta" : {
+        "ID" : "CVE-2023-5762",
+        "ASSIGNER" : "contact@wpscan.com"
+      },
+      "problemtype" : {
+        "problemtype_data" : [ {
+          "description" : [ {
+            "lang" : "en",
+            "value" : "CWE-94"
+          } ]
+        } ]
+      },
+      "references" : {
+        "reference_data" : [ {
+          "url" : "https://wpscan.com/vulnerability/6ad99725-eccc-4b61-bce2-668b62619deb",
+          "name" : "https://wpscan.com/vulnerability/6ad99725-eccc-4b61-bce2-668b62619deb",
+          "refsource" : "",
+          "tags" : [ "Exploit", "Third Party Advisory" ]
+        } ]
+      },
+      "description" : {
+        "description_data" : [ {
+          "lang" : "en",
+          "value" : "The Filr WordPress plugin before 1.2.3.6 is vulnerable from an RCE (Remote Code Execution) vulnerability, which allows the operating system to execute commands and fully compromise the server on behalf of a user with Author-level privileges."
+        } ]
+      }
+    },
+    "configurations" : {
+      "CVE_data_version" : "4.0",
+      "nodes" : [ {
+        "operator" : "OR",
+        "children" : [ ],
+        "cpe_match" : [ {
+          "vulnerable" : true,
+          "cpe23Uri" : "cpe:2.3:a:filr_project:filr:*:*:*:*:*:wordpress:*:*",
+          "versionEndExcluding" : "1.2.3.6",
+          "cpe_name" : [ ]
+        } ]
+      } ]
+    },
+    "impact" : {
+      "baseMetricV3" : {
+        "cvssV3" : {
+          "version" : "3.1",
+          "vectorString" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "attackVector" : "NETWORK",
+          "attackComplexity" : "LOW",
+          "privilegesRequired" : "LOW",
+          "userInteraction" : "NONE",
+          "scope" : "UNCHANGED",
+          "confidentialityImpact" : "HIGH",
+          "integrityImpact" : "HIGH",
+          "availabilityImpact" : "HIGH",
+          "baseScore" : 8.8,
+          "baseSeverity" : "HIGH"
+        },
+        "exploitabilityScore" : 2.8,
+        "impactScore" : 5.9
+      }
+    },
+    "publishedDate" : "2023-12-04T22:15Z",
+    "lastModifiedDate" : "2023-12-08T15:02Z"
+  },
+  {
+    "cve" : {
+      "data_type" : "CVE",
+      "data_format" : "MITRE",
+      "data_version" : "4.0",
+      "CVE_data_meta" : {
+        "ID" : "CVE-2023-50254",
+        "ASSIGNER" : "security-advisories@github.com"
+      },
+      "problemtype" : {
+        "problemtype_data" : [ {
+          "description" : [ {
+            "lang" : "en",
+            "value" : "CWE-22"
+          } ]
+        } ]
+      },
+      "references" : {
+        "reference_data" : [ {
+          "url" : "https://github.com/linuxdeepin/developer-center/security/advisories/GHSA-q9jr-726g-9495",
+          "name" : "https://github.com/linuxdeepin/developer-center/security/advisories/GHSA-q9jr-726g-9495",
+          "refsource" : "",
+          "tags" : [ "Exploit", "Vendor Advisory" ]
+        }, {
+          "url" : "https://github.com/linuxdeepin/deepin-reader/commit/4db7a079fb7bd77257b1b9208a7ab26aade8fe04",
+          "name" : "https://github.com/linuxdeepin/deepin-reader/commit/4db7a079fb7bd77257b1b9208a7ab26aade8fe04",
+          "refsource" : "",
+          "tags" : [ "Patch" ]
+        }, {
+          "url" : "https://github.com/linuxdeepin/deepin-reader/commit/c192fd20a2fe4003e0581c3164489a89e06420c6",
+          "name" : "https://github.com/linuxdeepin/deepin-reader/commit/c192fd20a2fe4003e0581c3164489a89e06420c6",
+          "refsource" : "",
+          "tags" : [ "Patch" ]
+        } ]
+      },
+      "description" : {
+        "description_data" : [ {
+          "lang" : "en",
+          "value" : "Deepin Linux's default document reader `deepin-reader` software suffers from a serious vulnerability in versions prior to 6.0.7 due to a design flaw that leads to remote command execution via crafted docx document. This is a file overwrite vulnerability. Remote code execution (RCE) can be achieved by overwriting files like .bash_rc, .bash_login, etc. RCE will be triggered when the user opens the terminal. Version 6.0.7 contains a patch for the issue."
+        } ]
+      }
+    },
+    "configurations" : {
+      "CVE_data_version" : "4.0",
+      "nodes" : [ {
+        "operator" : "OR",
+        "children" : [ ],
+        "cpe_match" : [ {
+          "vulnerable" : true,
+          "cpe23Uri" : "cpe:2.3:a:deepin:deepin_reader:*:*:*:*:*:*:*:*",
+          "versionEndExcluding" : "6.0.7",
+          "cpe_name" : [ ]
+        } ]
+      } ]
+    },
+    "impact" : {
+      "baseMetricV3" : {
+        "cvssV3" : {
+          "version" : "3.1",
+          "vectorString" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "attackVector" : "LOCAL",
+          "attackComplexity" : "LOW",
+          "privilegesRequired" : "NONE",
+          "userInteraction" : "REQUIRED",
+          "scope" : "UNCHANGED",
+          "confidentialityImpact" : "HIGH",
+          "integrityImpact" : "HIGH",
+          "availabilityImpact" : "HIGH",
+          "baseScore" : 7.8,
+          "baseSeverity" : "HIGH"
+        },
+        "exploitabilityScore" : 1.8,
+        "impactScore" : 5.9
+      }
+    },
+    "publishedDate" : "2023-12-22T17:15Z",
+    "lastModifiedDate" : "2024-01-03T20:12Z"
+  },
+  {
+    "cve" : {
+      "data_type" : "CVE",
+      "data_format" : "MITRE",
+      "data_version" : "4.0",
+      "CVE_data_meta" : {
+        "ID" : "CVE-2023-52138",
+        "ASSIGNER" : "security-advisories@github.com"
+      },
+      "problemtype" : {
+        "problemtype_data" : [ {
+          "description" : [ {
+            "lang" : "en",
+            "value" : "CWE-22"
+          }, {
+            "lang" : "en",
+            "value" : "CWE-59"
+          } ]
+        } ]
+      },
+      "references" : {
+        "reference_data" : [ {
+          "url" : "https://github.com/mate-desktop/engrampa/security/advisories/GHSA-c98h-v39w-3r7v",
+          "name" : "https://github.com/mate-desktop/engrampa/security/advisories/GHSA-c98h-v39w-3r7v",
+          "refsource" : "",
+          "tags" : [ "Exploit", "Vendor Advisory" ]
+        }, {
+          "url" : "https://github.com/mate-desktop/engrampa/commit/63d5dfa9005c6b16d0f0ccd888cc859fca78f970",
+          "name" : "https://github.com/mate-desktop/engrampa/commit/63d5dfa9005c6b16d0f0ccd888cc859fca78f970",
+          "refsource" : "",
+          "tags" : [ "Patch" ]
+        }, {
+          "url" : "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4IOJ3QWXTZGCXFEHP72ELY22PZ4AX2CB/",
+          "name" : "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4IOJ3QWXTZGCXFEHP72ELY22PZ4AX2CB/",
+          "refsource" : "",
+          "tags" : [ ]
+        }, {
+          "url" : "https://lists.debian.org/debian-lts-announce/2024/02/msg00011.html",
+          "name" : "https://lists.debian.org/debian-lts-announce/2024/02/msg00011.html",
+          "refsource" : "",
+          "tags" : [ ]
+        } ]
+      },
+      "description" : {
+        "description_data" : [ {
+          "lang" : "en",
+          "value" : "Engrampa is an archive manager for the MATE environment. Engrampa is found to be vulnerable to a Path Traversal vulnerability that can be leveraged to achieve full Remote Command Execution (RCE) on the target. While handling CPIO archives, the Engrampa Archive manager follows symlink, cpio by default will follow stored symlinks while extracting and the Archiver will not check the symlink location, which leads to arbitrary file writes to unintended locations. When the victim extracts the archive, the attacker can craft a malicious cpio or ISO archive to achieve RCE on the target system. This vulnerability was fixed in commit 63d5dfa.\n"
+        } ]
+      }
+    },
+    "configurations" : {
+      "CVE_data_version" : "4.0",
+      "nodes" : [ {
+        "operator" : "OR",
+        "children" : [ ],
+        "cpe_match" : [ {
+          "vulnerable" : true,
+          "cpe23Uri" : "cpe:2.3:a:mate-desktop:engrampa:*:*:*:*:*:*:*:*",
+          "versionEndExcluding" : "1.26.2",
+          "cpe_name" : [ ]
+        } ]
+      } ]
+    },
+    "impact" : {
+      "baseMetricV3" : {
+        "cvssV3" : {
+          "version" : "3.1",
+          "vectorString" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+          "attackVector" : "NETWORK",
+          "attackComplexity" : "LOW",
+          "privilegesRequired" : "NONE",
+          "userInteraction" : "REQUIRED",
+          "scope" : "CHANGED",
+          "confidentialityImpact" : "HIGH",
+          "integrityImpact" : "HIGH",
+          "availabilityImpact" : "HIGH",
+          "baseScore" : 9.6,
+          "baseSeverity" : "CRITICAL"
+        },
+        "exploitabilityScore" : 2.8,
+        "impactScore" : 6.0
+      }
+    },
+    "publishedDate" : "2024-02-05T15:15Z",
+    "lastModifiedDate" : "2024-02-29T01:42Z"
+  },
+  {
+    "cve": {
+      "data_type": "CVE",
+      "data_format": "MITRE",
+      "data_version": "4.0",
+      "CVE_data_meta": {
+        "ID": "CVE-2021-22555",
+        "ASSIGNER": "security@google.com"
+      },
+      "problemtype": {
+        "problemtype_data": [
+          {
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-787"
+              }
+            ]
+          }
+        ]
+      },
+      "references": {
+        "reference_data": [
+          {
+            "url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/net/netfilter/x_tables.c?id=b29c457a6511435960115c0f548c4360d5f4801d",
+            "name": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/net/netfilter/x_tables.c?id=b29c457a6511435960115c0f548c4360d5f4801d",
+            "refsource": "MISC",
+            "tags": ["Mailing List", "Patch", "Vendor Advisory"]
+          },
+          {
+            "url": "https://github.com/google/security-research/security/advisories/GHSA-xxx5-8mvq-3528",
+            "name": "https://github.com/google/security-research/security/advisories/GHSA-xxx5-8mvq-3528",
+            "refsource": "MISC",
+            "tags": ["Exploit", "Third Party Advisory"]
+          },
+          {
+            "url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/net/netfilter/x_tables.c?id=9fa492cdc160cd27ce1046cb36f47d3b2b1efa21",
+            "name": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/net/netfilter/x_tables.c?id=9fa492cdc160cd27ce1046cb36f47d3b2b1efa21",
+            "refsource": "MISC",
+            "tags": ["Mailing List", "Patch", "Vendor Advisory"]
+          },
+          {
+            "url": "http://packetstormsecurity.com/files/163528/Linux-Kernel-Netfilter-Heap-Out-Of-Bounds-Write.html",
+            "name": "http://packetstormsecurity.com/files/163528/Linux-Kernel-Netfilter-Heap-Out-Of-Bounds-Write.html",
+            "refsource": "MISC",
+            "tags": ["Third Party Advisory", "VDB Entry"]
+          },
+          {
+            "url": "https://security.netapp.com/advisory/ntap-20210805-0010/",
+            "name": "https://security.netapp.com/advisory/ntap-20210805-0010/",
+            "refsource": "CONFIRM",
+            "tags": ["Third Party Advisory"]
+          },
+          {
+            "url": "http://packetstormsecurity.com/files/163878/Kernel-Live-Patch-Security-Notice-LSN-0080-1.html",
+            "name": "http://packetstormsecurity.com/files/163878/Kernel-Live-Patch-Security-Notice-LSN-0080-1.html",
+            "refsource": "MISC",
+            "tags": ["Exploit", "Third Party Advisory", "VDB Entry"]
+          },
+          {
+            "url": "http://packetstormsecurity.com/files/164155/Kernel-Live-Patch-Security-Notice-LSN-0081-1.html",
+            "name": "http://packetstormsecurity.com/files/164155/Kernel-Live-Patch-Security-Notice-LSN-0081-1.html",
+            "refsource": "MISC",
+            "tags": ["Exploit", "Third Party Advisory", "VDB Entry"]
+          },
+          {
+            "url": "http://packetstormsecurity.com/files/164437/Netfilter-x_tables-Heap-Out-Of-Bounds-Write-Privilege-Escalation.html",
+            "name": "http://packetstormsecurity.com/files/164437/Netfilter-x_tables-Heap-Out-Of-Bounds-Write-Privilege-Escalation.html",
+            "refsource": "MISC",
+            "tags": ["Exploit", "Third Party Advisory", "VDB Entry"]
+          },
+          {
+            "url": "http://packetstormsecurity.com/files/165477/Kernel-Live-Patch-Security-Notice-LSN-0083-1.html",
+            "name": "http://packetstormsecurity.com/files/165477/Kernel-Live-Patch-Security-Notice-LSN-0083-1.html",
+            "refsource": "MISC",
+            "tags": ["Exploit", "Third Party Advisory", "VDB Entry"]
+          }
+        ]
+      },
+      "description": {
+        "description_data": [
+          {
+            "lang": "en",
+            "value": "A heap out-of-bounds write affecting Linux since v2.6.19-rc1 was discovered in net/netfilter/x_tables.c. This allows an attacker to gain privileges or cause a DoS (via heap memory corruption) through user name space"
+          }
+        ]
+      }
+    },
+    "configurations": {
+      "CVE_data_version": "4.0",
+      "nodes": [
+        {
+          "operator": "OR",
+          "children": [],
+          "cpe_match": [
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*",
+              "versionStartIncluding": "5.11",
+              "versionEndExcluding": "5.12",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*",
+              "versionStartIncluding": "5.5",
+              "versionEndExcluding": "5.10.31",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*",
+              "versionStartIncluding": "4.20",
+              "versionEndExcluding": "5.4.113",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*",
+              "versionStartIncluding": "4.15",
+              "versionEndExcluding": "4.19.188",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*",
+              "versionStartIncluding": "2.6.19",
+              "versionEndExcluding": "4.4.267",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*",
+              "versionStartIncluding": "4.10",
+              "versionEndExcluding": "4.14.231",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*",
+              "versionStartIncluding": "4.5",
+              "versionEndExcluding": "4.9.267",
+              "cpe_name": []
+            }
+          ]
+        },
+        {
+          "operator": "OR",
+          "children": [],
+          "cpe_match": [
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:brocade:fabric_operating_system:-:*:*:*:*:*:*:*",
+              "cpe_name": []
+            }
+          ]
+        },
+        {
+          "operator": "AND",
+          "children": [
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": true,
+                  "cpe23Uri": "cpe:2.3:o:netapp:fas_8300_firmware:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": false,
+                  "cpe23Uri": "cpe:2.3:h:netapp:fas_8300:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            }
+          ],
+          "cpe_match": []
+        },
+        {
+          "operator": "AND",
+          "children": [
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": true,
+                  "cpe23Uri": "cpe:2.3:o:netapp:fas_8700_firmware:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": false,
+                  "cpe23Uri": "cpe:2.3:h:netapp:fas_8700:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            }
+          ],
+          "cpe_match": []
+        },
+        {
+          "operator": "AND",
+          "children": [
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": true,
+                  "cpe23Uri": "cpe:2.3:o:netapp:aff_a400_firmware:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": false,
+                  "cpe23Uri": "cpe:2.3:h:netapp:aff_a400:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            }
+          ],
+          "cpe_match": []
+        },
+        {
+          "operator": "AND",
+          "children": [
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": true,
+                  "cpe23Uri": "cpe:2.3:o:netapp:aff_a250_firmware:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": false,
+                  "cpe23Uri": "cpe:2.3:h:netapp:aff_a250:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            }
+          ],
+          "cpe_match": []
+        },
+        {
+          "operator": "AND",
+          "children": [
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": true,
+                  "cpe23Uri": "cpe:2.3:o:netapp:aff_500f_firmware:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": false,
+                  "cpe23Uri": "cpe:2.3:h:netapp:aff_500f:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            }
+          ],
+          "cpe_match": []
+        },
+        {
+          "operator": "AND",
+          "children": [
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": true,
+                  "cpe23Uri": "cpe:2.3:o:netapp:h610c_firmware:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": false,
+                  "cpe23Uri": "cpe:2.3:h:netapp:h610c:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            }
+          ],
+          "cpe_match": []
+        },
+        {
+          "operator": "AND",
+          "children": [
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": true,
+                  "cpe23Uri": "cpe:2.3:o:netapp:h610s_firmware:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": false,
+                  "cpe23Uri": "cpe:2.3:h:netapp:h610s:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            }
+          ],
+          "cpe_match": []
+        },
+        {
+          "operator": "AND",
+          "children": [
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": true,
+                  "cpe23Uri": "cpe:2.3:o:netapp:h615c_firmware:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": false,
+                  "cpe23Uri": "cpe:2.3:h:netapp:h615c:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            }
+          ],
+          "cpe_match": []
+        },
+        {
+          "operator": "OR",
+          "children": [],
+          "cpe_match": [
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:netapp:solidfire:-:*:*:*:*:*:*:*",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:netapp:hci_management_node:-:*:*:*:*:*:*:*",
+              "cpe_name": []
+            }
+          ]
+        }
+      ]
+    },
+    "impact": {
+      "baseMetricV3": {
+        "cvssV3": {
+          "version": "3.1",
+          "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "attackVector": "LOCAL",
+          "attackComplexity": "LOW",
+          "privilegesRequired": "LOW",
+          "userInteraction": "NONE",
+          "scope": "UNCHANGED",
+          "confidentialityImpact": "HIGH",
+          "integrityImpact": "HIGH",
+          "availabilityImpact": "HIGH",
+          "baseScore": 7.8,
+          "baseSeverity": "HIGH"
+        },
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.9
+      },
+      "baseMetricV2": {
+        "cvssV2": {
+          "version": "2.0",
+          "vectorString": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+          "accessVector": "LOCAL",
+          "accessComplexity": "LOW",
+          "authentication": "NONE",
+          "confidentialityImpact": "PARTIAL",
+          "integrityImpact": "PARTIAL",
+          "availabilityImpact": "PARTIAL",
+          "baseScore": 4.6
+        },
+        "severity": "MEDIUM",
+        "exploitabilityScore": 3.9,
+        "impactScore": 6.4,
+        "acInsufInfo": false,
+        "obtainAllPrivilege": false,
+        "obtainUserPrivilege": false,
+        "obtainOtherPrivilege": false,
+        "userInteractionRequired": false
+      }
+    },
+    "publishedDate": "2021-07-07T12:15Z",
+    "lastModifiedDate": "2022-03-31T19:15Z"
+  },
+  {
+    "cve": {
+      "data_type": "CVE",
+      "data_format": "MITRE",
+      "data_version": "4.0",
+      "CVE_data_meta": {
+        "ID": "CVE-2024-21626",
+        "ASSIGNER": "security-advisories@github.com"
+      },
+      "problemtype": {
+        "problemtype_data": [
+          {
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-668"
+              }
+            ]
+          }
+        ]
+      },
+      "references": {
+        "reference_data": [
+          {
+            "url": "https://github.com/opencontainers/runc/security/advisories/GHSA-xr7r-f8xq-vfvv",
+            "name": "https://github.com/opencontainers/runc/security/advisories/GHSA-xr7r-f8xq-vfvv",
+            "refsource": "",
+            "tags": ["Exploit", "Vendor Advisory"]
+          },
+          {
+            "url": "https://github.com/opencontainers/runc/commit/02120488a4c0fc487d1ed2867e901eeed7ce8ecf",
+            "name": "https://github.com/opencontainers/runc/commit/02120488a4c0fc487d1ed2867e901eeed7ce8ecf",
+            "refsource": "",
+            "tags": ["Patch"]
+          },
+          {
+            "url": "https://github.com/opencontainers/runc/releases/tag/v1.1.12",
+            "name": "https://github.com/opencontainers/runc/releases/tag/v1.1.12",
+            "refsource": "",
+            "tags": ["Release Notes"]
+          },
+          {
+            "url": "http://www.openwall.com/lists/oss-security/2024/02/01/1",
+            "name": "http://www.openwall.com/lists/oss-security/2024/02/01/1",
+            "refsource": "",
+            "tags": ["Mailing List"]
+          },
+          {
+            "url": "http://www.openwall.com/lists/oss-security/2024/02/02/3",
+            "name": "http://www.openwall.com/lists/oss-security/2024/02/02/3",
+            "refsource": "",
+            "tags": ["Mailing List"]
+          },
+          {
+            "url": "http://packetstormsecurity.com/files/176993/runc-1.1.11-File-Descriptor-Leak-Privilege-Escalation.html",
+            "name": "http://packetstormsecurity.com/files/176993/runc-1.1.11-File-Descriptor-Leak-Privilege-Escalation.html",
+            "refsource": "",
+            "tags": ["Exploit", "Third Party Advisory", "VDB Entry"]
+          },
+          {
+            "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SYMO3BANINS6RGFQFKPRG4FIOJ7GWYTL/",
+            "name": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SYMO3BANINS6RGFQFKPRG4FIOJ7GWYTL/",
+            "refsource": "",
+            "tags": ["Mailing List"]
+          },
+          {
+            "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2NLXNE23Q5ESQUAI22Z7A63JX2WMPJ2J/",
+            "name": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2NLXNE23Q5ESQUAI22Z7A63JX2WMPJ2J/",
+            "refsource": "",
+            "tags": []
+          },
+          {
+            "url": "https://lists.debian.org/debian-lts-announce/2024/02/msg00005.html",
+            "name": "https://lists.debian.org/debian-lts-announce/2024/02/msg00005.html",
+            "refsource": "",
+            "tags": []
+          }
+        ]
+      },
+      "description": {
+        "description_data": [
+          {
+            "lang": "en",
+            "value": "runc is a CLI tool for spawning and running containers on Linux according to the OCI specification. In runc 1.1.11 and earlier, due to an internal file descriptor leak, an attacker could cause a newly-spawned container process (from runc exec) to have a working directory in the host filesystem namespace, allowing for a container escape by giving access to the host filesystem (\"attack 2\"). The same attack could be used by a malicious image to allow a container process to gain access to the host filesystem through runc run (\"attack 1\"). Variants of attacks 1 and 2 could be also be used to overwrite semi-arbitrary host binaries, allowing for complete container escapes (\"attack 3a\" and \"attack 3b\"). runc 1.1.12 includes patches for this issue. "
+          }
+        ]
+      }
+    },
+    "configurations": {
+      "CVE_data_version": "4.0",
+      "nodes": [
+        {
+          "operator": "OR",
+          "children": [],
+          "cpe_match": [
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:linuxfoundation:runc:*:*:*:*:*:*:*:*",
+              "versionEndExcluding": "1.1.12",
+              "cpe_name": []
+            }
+          ]
+        },
+        {
+          "operator": "OR",
+          "children": [],
+          "cpe_match": [
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:fedoraproject:fedora:39:*:*:*:*:*:*:*",
+              "cpe_name": []
+            }
+          ]
+        }
+      ]
+    },
+    "impact": {
+      "baseMetricV3": {
+        "cvssV3": {
+          "version": "3.1",
+          "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+          "attackVector": "LOCAL",
+          "attackComplexity": "LOW",
+          "privilegesRequired": "NONE",
+          "userInteraction": "REQUIRED",
+          "scope": "CHANGED",
+          "confidentialityImpact": "HIGH",
+          "integrityImpact": "HIGH",
+          "availabilityImpact": "HIGH",
+          "baseScore": 8.6,
+          "baseSeverity": "HIGH"
+        },
+        "exploitabilityScore": 1.8,
+        "impactScore": 6.0
+      }
+    },
+    "publishedDate": "2024-01-31T22:15Z",
+    "lastModifiedDate": "2024-02-19T03:15Z"
+  },
+  {
+    "cve": {
+      "data_type": "CVE",
+      "data_format": "MITRE",
+      "data_version": "4.0",
+      "CVE_data_meta": {
+        "ID": "CVE-2019-5736",
+        "ASSIGNER": "cve@mitre.org"
+      },
+      "problemtype": {
+        "problemtype_data": [
+          {
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-78"
+              }
+            ]
+          }
+        ]
+      },
+      "references": {
+        "reference_data": [
+          {
+            "url": "https://www.openwall.com/lists/oss-security/2019/02/11/2",
+            "name": "https://www.openwall.com/lists/oss-security/2019/02/11/2",
+            "refsource": "MISC",
+            "tags": ["Mailing List", "Patch", "Third Party Advisory"]
+          },
+          {
+            "url": "https://github.com/opencontainers/runc/commit/6635b4f0c6af3810594d2770f662f34ddc15b40d",
+            "name": "https://github.com/opencontainers/runc/commit/6635b4f0c6af3810594d2770f662f34ddc15b40d",
+            "refsource": "MISC",
+            "tags": ["Patch", "Third Party Advisory"]
+          },
+          {
+            "url": "https://github.com/opencontainers/runc/commit/0a8e4117e7f715d5fbeef398405813ce8e88558b",
+            "name": "https://github.com/opencontainers/runc/commit/0a8e4117e7f715d5fbeef398405813ce8e88558b",
+            "refsource": "MISC",
+            "tags": ["Patch", "Third Party Advisory"]
+          },
+          {
+            "url": "https://github.com/docker/docker-ce/releases/tag/v18.09.2",
+            "name": "https://github.com/docker/docker-ce/releases/tag/v18.09.2",
+            "refsource": "MISC",
+            "tags": ["Release Notes", "Third Party Advisory"]
+          },
+          {
+            "url": "https://access.redhat.com/security/vulnerabilities/runcescape",
+            "name": "https://access.redhat.com/security/vulnerabilities/runcescape",
+            "refsource": "MISC",
+            "tags": ["Third Party Advisory"]
+          },
+          {
+            "url": "https://access.redhat.com/security/cve/cve-2019-5736",
+            "name": "https://access.redhat.com/security/cve/cve-2019-5736",
+            "refsource": "MISC",
+            "tags": ["Third Party Advisory"]
+          },
+          {
+            "url": "https://www.twistlock.com/2019/02/11/how-to-mitigate-cve-2019-5736-in-runc-and-docker/",
+            "name": "https://www.twistlock.com/2019/02/11/how-to-mitigate-cve-2019-5736-in-runc-and-docker/",
+            "refsource": "MISC",
+            "tags": ["Third Party Advisory"]
+          },
+          {
+            "url": "https://github.com/rancher/runc-cve",
+            "name": "https://github.com/rancher/runc-cve",
+            "refsource": "MISC",
+            "tags": ["Third Party Advisory"]
+          },
+          {
+            "url": "https://cloud.google.com/kubernetes-engine/docs/security-bulletins#february-11-2019-runc",
+            "name": "https://cloud.google.com/kubernetes-engine/docs/security-bulletins#february-11-2019-runc",
+            "refsource": "MISC",
+            "tags": ["Third Party Advisory"]
+          },
+          {
+            "url": "https://brauner.github.io/2019/02/12/privileged-containers.html",
+            "name": "https://brauner.github.io/2019/02/12/privileged-containers.html",
+            "refsource": "MISC",
+            "tags": ["Exploit", "Technical Description", "Third Party Advisory"]
+          },
+          {
+            "url": "https://aws.amazon.com/security/security-bulletins/AWS-2019-002/",
+            "name": "https://aws.amazon.com/security/security-bulletins/AWS-2019-002/",
+            "refsource": "MISC",
+            "tags": ["Third Party Advisory"]
+          },
+          {
+            "url": "https://access.redhat.com/errata/RHSA-2019:0304",
+            "name": "RHSA-2019:0304",
+            "refsource": "REDHAT",
+            "tags": ["Third Party Advisory"]
+          },
+          {
+            "url": "https://access.redhat.com/errata/RHSA-2019:0303",
+            "name": "RHSA-2019:0303",
+            "refsource": "REDHAT",
+            "tags": ["Third Party Advisory"]
+          },
+          {
+            "url": "https://kubernetes.io/blog/2019/02/11/runc-and-cve-2019-5736/",
+            "name": "https://kubernetes.io/blog/2019/02/11/runc-and-cve-2019-5736/",
+            "refsource": "MISC",
+            "tags": ["Third Party Advisory"]
+          },
+          {
+            "url": "https://www.exploit-db.com/exploits/46359/",
+            "name": "46359",
+            "refsource": "EXPLOIT-DB",
+            "tags": ["Exploit", "Third Party Advisory", "VDB Entry"]
+          },
+          {
+            "url": "http://www.securityfocus.com/bid/106976",
+            "name": "106976",
+            "refsource": "BID",
+            "tags": ["Third Party Advisory", "VDB Entry"]
+          },
+          {
+            "url": "https://www.exploit-db.com/exploits/46369/",
+            "name": "46369",
+            "refsource": "EXPLOIT-DB",
+            "tags": ["Exploit", "Third Party Advisory", "VDB Entry"]
+          },
+          {
+            "url": "https://github.com/q3k/cve-2019-5736-poc",
+            "name": "https://github.com/q3k/cve-2019-5736-poc",
+            "refsource": "MISC",
+            "tags": ["Exploit", "Third Party Advisory"]
+          },
+          {
+            "url": "https://github.com/Frichetten/CVE-2019-5736-PoC",
+            "name": "https://github.com/Frichetten/CVE-2019-5736-PoC",
+            "refsource": "MISC",
+            "tags": ["Exploit", "Third Party Advisory"]
+          },
+          {
+            "url": "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20190215-runc",
+            "name": "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20190215-runc",
+            "refsource": "CISCO",
+            "tags": ["Third Party Advisory"]
+          },
+          {
+            "url": "https://www.synology.com/security/advisory/Synology_SA_19_06",
+            "name": "https://www.synology.com/security/advisory/Synology_SA_19_06",
+            "refsource": "CONFIRM",
+            "tags": ["Third Party Advisory"]
+          },
+          {
+            "url": "https://access.redhat.com/errata/RHSA-2019:0401",
+            "name": "RHSA-2019:0401",
+            "refsource": "REDHAT",
+            "tags": ["Third Party Advisory"]
+          },
+          {
+            "url": "https://access.redhat.com/errata/RHSA-2019:0408",
+            "name": "RHSA-2019:0408",
+            "refsource": "REDHAT",
+            "tags": ["Third Party Advisory"]
+          },
+          {
+            "url": "https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbhf03913en_us",
+            "name": "https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbhf03913en_us",
+            "refsource": "CONFIRM",
+            "tags": ["Permissions Required"]
+          },
+          {
+            "url": "https://security.netapp.com/advisory/ntap-20190307-0008/",
+            "name": "https://security.netapp.com/advisory/ntap-20190307-0008/",
+            "refsource": "CONFIRM",
+            "tags": ["Third Party Advisory"]
+          },
+          {
+            "url": "http://www.openwall.com/lists/oss-security/2019/03/23/1",
+            "name": "[oss-security] 20190323 CVE-2019-0204: Some Mesos components can be overwritten making arbitrary code execution possible.",
+            "refsource": "MLIST",
+            "tags": ["Mailing List", "Third Party Advisory"]
+          },
+          {
+            "url": "https://bugzilla.suse.com/show_bug.cgi?id=1121967",
+            "name": "https://bugzilla.suse.com/show_bug.cgi?id=1121967",
+            "refsource": "MISC",
+            "tags": ["Issue Tracking", "Patch", "Third Party Advisory"]
+          },
+          {
+            "url": "https://blog.dragonsector.pl/2019/02/cve-2019-5736-escape-from-docker-and.html",
+            "name": "https://blog.dragonsector.pl/2019/02/cve-2019-5736-escape-from-docker-and.html",
+            "refsource": "MISC",
+            "tags": ["Exploit", "Mitigation", "Third Party Advisory"]
+          },
+          {
+            "url": "https://support.mesosphere.com/s/article/Known-Issue-Container-Runtime-Vulnerability-MSPH-2019-0003",
+            "name": "https://support.mesosphere.com/s/article/Known-Issue-Container-Runtime-Vulnerability-MSPH-2019-0003",
+            "refsource": "CONFIRM",
+            "tags": ["Exploit", "Patch", "Third Party Advisory"]
+          },
+          {
+            "url": "http://lists.opensuse.org/opensuse-security-announce/2019-03/msg00044.html",
+            "name": "openSUSE-SU-2019:1079",
+            "refsource": "SUSE",
+            "tags": ["Mailing List", "Third Party Advisory"]
+          },
+          {
+            "url": "http://lists.opensuse.org/opensuse-security-announce/2019-04/msg00074.html",
+            "name": "openSUSE-SU-2019:1227",
+            "refsource": "SUSE",
+            "tags": ["Mailing List", "Third Party Advisory"]
+          },
+          {
+            "url": "http://lists.opensuse.org/opensuse-security-announce/2019-04/msg00091.html",
+            "name": "openSUSE-SU-2019:1275",
+            "refsource": "SUSE",
+            "tags": ["Mailing List", "Third Party Advisory"]
+          },
+          {
+            "url": "https://softwaresupport.softwaregrp.com/document/-/facetsearch/document/KM03410944",
+            "name": "https://softwaresupport.softwaregrp.com/document/-/facetsearch/document/KM03410944",
+            "refsource": "CONFIRM",
+            "tags": ["Third Party Advisory"]
+          },
+          {
+            "url": "https://access.redhat.com/errata/RHSA-2019:0975",
+            "name": "RHSA-2019:0975",
+            "refsource": "REDHAT",
+            "tags": ["Third Party Advisory"]
+          },
+          {
+            "url": "https://azure.microsoft.com/en-us/updates/iot-edge-fix-cve-2019-5736/",
+            "name": "https://azure.microsoft.com/en-us/updates/iot-edge-fix-cve-2019-5736/",
+            "refsource": "MISC",
+            "tags": ["Patch", "Third Party Advisory", "Vendor Advisory"]
+          },
+          {
+            "url": "https://azure.microsoft.com/en-us/updates/cve-2019-5736-and-runc-vulnerability/",
+            "name": "https://azure.microsoft.com/en-us/updates/cve-2019-5736-and-runc-vulnerability/",
+            "refsource": "MISC",
+            "tags": ["Patch", "Third Party Advisory", "Vendor Advisory"]
+          },
+          {
+            "url": "http://lists.opensuse.org/opensuse-security-announce/2019-05/msg00060.html",
+            "name": "openSUSE-SU-2019:1444",
+            "refsource": "SUSE",
+            "tags": ["Mailing List", "Third Party Advisory"]
+          },
+          {
+            "url": "http://lists.opensuse.org/opensuse-security-announce/2019-05/msg00073.html",
+            "name": "openSUSE-SU-2019:1481",
+            "refsource": "SUSE",
+            "tags": ["Mailing List", "Third Party Advisory"]
+          },
+          {
+            "url": "http://lists.opensuse.org/opensuse-security-announce/2019-06/msg00011.html",
+            "name": "openSUSE-SU-2019:1499",
+            "refsource": "SUSE",
+            "tags": ["Mailing List", "Third Party Advisory"]
+          },
+          {
+            "url": "http://lists.opensuse.org/opensuse-security-announce/2019-06/msg00015.html",
+            "name": "openSUSE-SU-2019:1506",
+            "refsource": "SUSE",
+            "tags": ["Mailing List", "Third Party Advisory"]
+          },
+          {
+            "url": "http://www.openwall.com/lists/oss-security/2019/06/28/2",
+            "name": "[oss-security] 20190628 Re: linux-distros membership application - Microsoft",
+            "refsource": "MLIST",
+            "tags": ["Mailing List", "Third Party Advisory"]
+          },
+          {
+            "url": "http://www.openwall.com/lists/oss-security/2019/07/06/4",
+            "name": "[oss-security] 20190706 Re: linux-distros membership application - Microsoft",
+            "refsource": "MLIST",
+            "tags": ["Mailing List", "Third Party Advisory"]
+          },
+          {
+            "url": "http://www.openwall.com/lists/oss-security/2019/07/06/3",
+            "name": "[oss-security] 20190706 Re: linux-distros membership application - Microsoft",
+            "refsource": "MLIST",
+            "tags": ["Mailing List", "Third Party Advisory"]
+          },
+          {
+            "url": "https://usn.ubuntu.com/4048-1/",
+            "name": "USN-4048-1",
+            "refsource": "UBUNTU",
+            "tags": ["Third Party Advisory"]
+          },
+          {
+            "url": "http://lists.opensuse.org/opensuse-security-announce/2019-08/msg00084.html",
+            "name": "openSUSE-SU-2019:2021",
+            "refsource": "SUSE",
+            "tags": ["Mailing List", "Third Party Advisory"]
+          },
+          {
+            "url": "http://lists.opensuse.org/opensuse-security-announce/2019-10/msg00007.html",
+            "name": "openSUSE-SU-2019:2245",
+            "refsource": "SUSE",
+            "tags": ["Mailing List", "Third Party Advisory"]
+          },
+          {
+            "url": "http://lists.opensuse.org/opensuse-security-announce/2019-10/msg00029.html",
+            "name": "openSUSE-SU-2019:2286",
+            "refsource": "SUSE",
+            "tags": ["Mailing List", "Third Party Advisory"]
+          },
+          {
+            "url": "http://www.openwall.com/lists/oss-security/2019/10/24/1",
+            "name": "[oss-security] 20191023 Membership application for linux-distros - VMware",
+            "refsource": "MLIST",
+            "tags": ["Mailing List", "Third Party Advisory"]
+          },
+          {
+            "url": "http://www.openwall.com/lists/oss-security/2019/10/29/3",
+            "name": "[oss-security] 20191029 Re: Membership application for linux-distros - VMware",
+            "refsource": "MLIST",
+            "tags": ["Mailing List", "Third Party Advisory"]
+          },
+          {
+            "url": "https://security.gentoo.org/glsa/202003-21",
+            "name": "GLSA-202003-21",
+            "refsource": "GENTOO",
+            "tags": ["Third Party Advisory"]
+          },
+          {
+            "url": "http://packetstormsecurity.com/files/163339/Docker-Container-Escape.html",
+            "name": "http://packetstormsecurity.com/files/163339/Docker-Container-Escape.html",
+            "refsource": "MISC",
+            "tags": ["Exploit", "Third Party Advisory", "VDB Entry"]
+          },
+          {
+            "url": "http://packetstormsecurity.com/files/165197/Docker-runc-Command-Execution-Proof-Of-Concept.html",
+            "name": "http://packetstormsecurity.com/files/165197/Docker-runc-Command-Execution-Proof-Of-Concept.html",
+            "refsource": "MISC",
+            "tags": ["Third Party Advisory", "VDB Entry"]
+          },
+          {
+            "url": "https://lists.apache.org/thread.html/b162dd624dc088cd634292f0402282a1d1d0ce853baeae8205bc033c%40%3Cdev.mesos.apache.org%3E",
+            "name": "[mesos-dev] 20190323 CVE-2019-0204: Some Mesos components can be overwritten making arbitrary code execution possible.",
+            "refsource": "",
+            "tags": []
+          },
+          {
+            "url": "https://lists.apache.org/thread.html/a258757af84c5074dc7bf932622020fd4f60cef65a84290380386706%40%3Cuser.mesos.apache.org%3E",
+            "name": "[mesos-user] 20190323 CVE-2019-0204: Some Mesos components can be overwritten making arbitrary code execution possible.",
+            "refsource": "",
+            "tags": []
+          },
+          {
+            "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/V6A4OSFM5GGOWW4ECELV5OHX2XRAUSPH/",
+            "name": "FEDORA-2019-bc70b381ad",
+            "refsource": "",
+            "tags": []
+          },
+          {
+            "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/SWFJGIPYAAAMVSWWI3QWYXGA3ZBU2H4W/",
+            "name": "FEDORA-2019-6174b47003",
+            "refsource": "",
+            "tags": []
+          },
+          {
+            "url": "https://lists.apache.org/thread.html/acacf018c12636e41667e94ac0a1e9244e887eef2debdd474640aa6e%40%3Cdev.dlab.apache.org%3E",
+            "name": "[dlab-dev] 20190524 [jira] [Created] (DLAB-723) Runc vulnerability CVE-2019-5736",
+            "refsource": "",
+            "tags": []
+          },
+          {
+            "url": "https://lists.apache.org/thread.html/a585f64d14c31ab393b90c5f17e41d9765a1a17eec63856ce750af46%40%3Cdev.dlab.apache.org%3E",
+            "name": "[dlab-dev] 20190524 [jira] [Updated] (DLAB-723) Runc vulnerability CVE-2019-5736",
+            "refsource": "",
+            "tags": []
+          },
+          {
+            "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/EGZKRCKI3Y7FMADO2MENMT4TU24QGHFR/",
+            "name": "FEDORA-2019-2baa1f7b19",
+            "refsource": "",
+            "tags": []
+          },
+          {
+            "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/DLC52IOJN6IQJWJ6CUI6AIUP6GVVG2QP/",
+            "name": "FEDORA-2019-c1dac1b3b8",
+            "refsource": "",
+            "tags": []
+          },
+          {
+            "url": "https://lists.apache.org/thread.html/24e54e3c6b2259e3903b6b8fe26896ac649c481ea99c5739468c92a3%40%3Cdev.dlab.apache.org%3E",
+            "name": "[dlab-dev] 20190923 [jira] [Assigned] (DLAB-723) Runc vulnerability CVE-2019-5736",
+            "refsource": "",
+            "tags": []
+          },
+          {
+            "url": "https://lists.apache.org/thread.html/rc494623986d76593873ce5a40dd69cb3629400d10750d5d7e96b8587%40%3Cdev.dlab.apache.org%3E",
+            "name": "[dlab-dev] 20200525 [jira] [Deleted] (DLAB-723) Runc vulnerability CVE-2019-5736",
+            "refsource": "",
+            "tags": []
+          },
+          {
+            "url": "https://lists.apache.org/thread.html/rf1bbc0ea4a9f014cf94df9a12a6477d24a27f52741dbc87f2fd52ff2%40%3Cissues.geode.apache.org%3E",
+            "name": "[geode-issues] 20200831 [jira] [Created] (GEODE-8471) Dependency security issues in geode-core-1.12",
+            "refsource": "",
+            "tags": []
+          },
+          {
+            "url": "http://www.openwall.com/lists/oss-security/2024/01/31/6",
+            "name": "[oss-security] 20240201 runc: CVE-2024-21626: high severity container breakout attack",
+            "refsource": "",
+            "tags": []
+          },
+          {
+            "url": "http://www.openwall.com/lists/oss-security/2024/02/01/1",
+            "name": "[oss-security] 20240201 Re: runc: CVE-2024-21626: high severity container breakout attack",
+            "refsource": "",
+            "tags": []
+          },
+          {
+            "url": "http://www.openwall.com/lists/oss-security/2024/02/02/3",
+            "name": "[oss-security] 20240202 Re: Re: runc: CVE-2024-21626: high severity container breakout attack",
+            "refsource": "",
+            "tags": []
+          }
+        ]
+      },
+      "description": {
+        "description_data": [
+          {
+            "lang": "en",
+            "value": "runc through 1.0-rc6, as used in Docker before 18.09.2 and other products, allows attackers to overwrite the host runc binary (and consequently obtain host root access) by leveraging the ability to execute a command as root within one of these types of containers: (1) a new container with an attacker-controlled image, or (2) an existing container, to which the attacker previously had write access, that can be attached with docker exec. This occurs because of file-descriptor mishandling, related to /proc/self/exe."
+          }
+        ]
+      }
+    },
+    "configurations": {
+      "CVE_data_version": "4.0",
+      "nodes": [
+        {
+          "operator": "OR",
+          "children": [],
+          "cpe_match": [
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:docker:docker:*:*:*:*:*:*:*:*",
+              "versionEndExcluding": "18.09.2",
+              "cpe_name": []
+            }
+          ]
+        },
+        {
+          "operator": "OR",
+          "children": [],
+          "cpe_match": [
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:linuxfoundation:runc:1.0.0:rc6:*:*:*:*:*:*",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:linuxfoundation:runc:1.0.0:rc5:*:*:*:*:*:*",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:linuxfoundation:runc:1.0.0:rc4:*:*:*:*:*:*",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:linuxfoundation:runc:1.0.0:rc3:*:*:*:*:*:*",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:linuxfoundation:runc:1.0.0:rc2:*:*:*:*:*:*",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:linuxfoundation:runc:1.0.0:rc1:*:*:*:*:*:*",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:linuxfoundation:runc:*:*:*:*:*:*:*:*",
+              "versionEndIncluding": "0.1.1",
+              "cpe_name": []
+            }
+          ]
+        },
+        {
+          "operator": "OR",
+          "children": [],
+          "cpe_match": [
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:redhat:enterprise_linux_server:7.0:*:*:*:*:*:*:*",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:redhat:openshift:3.4:*:*:*:*:*:*:*",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:redhat:openshift:3.7:*:*:*:*:*:*:*",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:redhat:openshift:3.6:*:*:*:*:*:*:*",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:redhat:openshift:3.5:*:*:*:*:*:*:*",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:redhat:enterprise_linux:8.0:*:*:*:*:*:*:*",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:redhat:container_development_kit:3.7:*:*:*:*:*:*:*",
+              "cpe_name": []
+            }
+          ]
+        },
+        {
+          "operator": "OR",
+          "children": [],
+          "cpe_match": [
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:google:kubernetes_engine:-:*:*:*:*:*:*:*",
+              "cpe_name": []
+            }
+          ]
+        },
+        {
+          "operator": "OR",
+          "children": [],
+          "cpe_match": [
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:linuxcontainers:lxc:*:*:*:*:*:*:*:*",
+              "versionEndExcluding": "3.2.0",
+              "cpe_name": []
+            }
+          ]
+        },
+        {
+          "operator": "OR",
+          "children": [],
+          "cpe_match": [
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:hp:onesphere:-:*:*:*:*:*:*:*",
+              "cpe_name": []
+            }
+          ]
+        },
+        {
+          "operator": "OR",
+          "children": [],
+          "cpe_match": [
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:netapp:solidfire:-:*:*:*:*:*:*:*",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:netapp:hci_management_node:-:*:*:*:*:*:*:*",
+              "cpe_name": []
+            }
+          ]
+        },
+        {
+          "operator": "OR",
+          "children": [],
+          "cpe_match": [
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:apache:mesos:*:*:*:*:*:*:*:*",
+              "versionStartIncluding": "1.4.0",
+              "versionEndExcluding": "1.4.3",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:apache:mesos:*:*:*:*:*:*:*:*",
+              "versionStartIncluding": "1.6.0",
+              "versionEndExcluding": "1.6.2",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:apache:mesos:*:*:*:*:*:*:*:*",
+              "versionStartIncluding": "1.7.0",
+              "versionEndExcluding": "1.7.2",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:apache:mesos:*:*:*:*:*:*:*:*",
+              "versionStartIncluding": "1.5.0",
+              "versionEndExcluding": "1.5.3",
+              "cpe_name": []
+            }
+          ]
+        },
+        {
+          "operator": "OR",
+          "children": [],
+          "cpe_match": [
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:opensuse:leap:42.3:*:*:*:*:*:*:*",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:opensuse:leap:15.0:*:*:*:*:*:*:*",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:opensuse:leap:15.1:*:*:*:*:*:*:*",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:opensuse:backports_sle:15.0:sp1:*:*:*:*:*:*",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:opensuse:backports_sle:15.0:-:*:*:*:*:*:*",
+              "cpe_name": []
+            }
+          ]
+        },
+        {
+          "operator": "OR",
+          "children": [],
+          "cpe_match": [
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:d2iq:kubernetes_engine:*:*:*:*:*:*:*:*",
+              "versionEndExcluding": "2.2.0-1.13.3",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:d2iq:dc\\/os:*:*:*:*:*:*:*:*",
+              "versionEndExcluding": "1.10.10",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:d2iq:dc\\/os:*:*:*:*:*:*:*:*",
+              "versionStartIncluding": "1.10.11",
+              "versionEndExcluding": "1.11.9",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:d2iq:dc\\/os:*:*:*:*:*:*:*:*",
+              "versionStartIncluding": "1.11.10",
+              "versionEndExcluding": "1.12.1",
+              "cpe_name": []
+            }
+          ]
+        },
+        {
+          "operator": "OR",
+          "children": [],
+          "cpe_match": [
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:fedoraproject:fedora:29:*:*:*:*:*:*:*",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:fedoraproject:fedora:30:*:*:*:*:*:*:*",
+              "cpe_name": []
+            }
+          ]
+        },
+        {
+          "operator": "OR",
+          "children": [],
+          "cpe_match": [
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:canonical:ubuntu_linux:16.04:*:*:*:lts:*:*:*",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:canonical:ubuntu_linux:18.04:*:*:*:lts:*:*:*",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:canonical:ubuntu_linux:18.10:*:*:*:*:*:*:*",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:canonical:ubuntu_linux:19.04:*:*:*:*:*:*:*",
+              "cpe_name": []
+            }
+          ]
+        },
+        {
+          "operator": "OR",
+          "children": [],
+          "cpe_match": [
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:microfocus:service_management_automation:2018.05:*:*:*:*:*:*:*",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:microfocus:service_management_automation:2018.02:*:*:*:*:*:*:*",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:microfocus:service_management_automation:2018.08:*:*:*:*:*:*:*",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:microfocus:service_management_automation:2018.11:*:*:*:*:*:*:*",
+              "cpe_name": []
+            }
+          ]
+        }
+      ]
+    },
+    "impact": {
+      "baseMetricV3": {
+        "cvssV3": {
+          "version": "3.1",
+          "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+          "attackVector": "LOCAL",
+          "attackComplexity": "LOW",
+          "privilegesRequired": "NONE",
+          "userInteraction": "REQUIRED",
+          "scope": "CHANGED",
+          "confidentialityImpact": "HIGH",
+          "integrityImpact": "HIGH",
+          "availabilityImpact": "HIGH",
+          "baseScore": 8.6,
+          "baseSeverity": "HIGH"
+        },
+        "exploitabilityScore": 1.8,
+        "impactScore": 6.0
+      },
+      "baseMetricV2": {
+        "cvssV2": {
+          "version": "2.0",
+          "vectorString": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+          "accessVector": "NETWORK",
+          "accessComplexity": "MEDIUM",
+          "authentication": "NONE",
+          "confidentialityImpact": "COMPLETE",
+          "integrityImpact": "COMPLETE",
+          "availabilityImpact": "COMPLETE",
+          "baseScore": 9.3
+        },
+        "severity": "HIGH",
+        "exploitabilityScore": 8.6,
+        "impactScore": 10.0,
+        "acInsufInfo": false,
+        "obtainAllPrivilege": false,
+        "obtainUserPrivilege": false,
+        "obtainOtherPrivilege": false,
+        "userInteractionRequired": true
+      }
+    },
+    "publishedDate": "2019-02-11T19:29Z",
+    "lastModifiedDate": "2024-02-02T12:15Z"
+  },
+  {
+    "cve": {
+      "data_type": "CVE",
+      "data_format": "MITRE",
+      "data_version": "4.0",
+      "CVE_data_meta": {
+        "ID": "CVE-2022-0185",
+        "ASSIGNER": "secalert@redhat.com"
+      },
+      "problemtype": {
+        "problemtype_data": [
+          {
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-191"
+              }
+            ]
+          }
+        ]
+      },
+      "references": {
+        "reference_data": [
+          {
+            "url": "https://github.com/Crusaders-of-Rust/CVE-2022-0185",
+            "name": "https://github.com/Crusaders-of-Rust/CVE-2022-0185",
+            "refsource": "MISC",
+            "tags": ["Exploit", "Third Party Advisory"]
+          },
+          {
+            "url": "https://www.openwall.com/lists/oss-security/2022/01/18/7",
+            "name": "https://www.openwall.com/lists/oss-security/2022/01/18/7",
+            "refsource": "MISC",
+            "tags": ["Mailing List", "Patch", "Third Party Advisory"]
+          },
+          {
+            "url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=722d94847de2",
+            "name": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=722d94847de2",
+            "refsource": "MISC",
+            "tags": ["Mailing List", "Patch"]
+          },
+          {
+            "url": "https://www.willsroot.io/2022/01/cve-2022-0185.html",
+            "name": "https://www.willsroot.io/2022/01/cve-2022-0185.html",
+            "refsource": "MISC",
+            "tags": ["Exploit", "Third Party Advisory"]
+          },
+          {
+            "url": "https://security.netapp.com/advisory/ntap-20220225-0003/",
+            "name": "https://security.netapp.com/advisory/ntap-20220225-0003/",
+            "refsource": "CONFIRM",
+            "tags": ["Third Party Advisory"]
+          }
+        ]
+      },
+      "description": {
+        "description_data": [
+          {
+            "lang": "en",
+            "value": "A heap-based buffer overflow flaw was found in the way the legacy_parse_param function in the Filesystem Context functionality of the Linux kernel verified the supplied parameters length. An unprivileged (in case of unprivileged user namespaces enabled, otherwise needs namespaced CAP_SYS_ADMIN privilege) local user able to open a filesystem that does not support the Filesystem Context API (and thus fallbacks to legacy handling) could use this flaw to escalate their privileges on the system."
+          }
+        ]
+      }
+    },
+    "configurations": {
+      "CVE_data_version": "4.0",
+      "nodes": [
+        {
+          "operator": "OR",
+          "children": [],
+          "cpe_match": [
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*",
+              "versionStartIncluding": "5.1",
+              "versionEndExcluding": "5.4.173",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*",
+              "versionStartIncluding": "5.5",
+              "versionEndExcluding": "5.10.93",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*",
+              "versionStartIncluding": "5.11",
+              "versionEndExcluding": "5.15.16",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*",
+              "versionStartIncluding": "5.16",
+              "versionEndExcluding": "5.16.2",
+              "cpe_name": []
+            }
+          ]
+        },
+        {
+          "operator": "AND",
+          "children": [
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": true,
+                  "cpe23Uri": "cpe:2.3:o:netapp:h410c_firmware:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": false,
+                  "cpe23Uri": "cpe:2.3:h:netapp:h410c:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            }
+          ],
+          "cpe_match": []
+        },
+        {
+          "operator": "AND",
+          "children": [
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": true,
+                  "cpe23Uri": "cpe:2.3:o:netapp:h300s_firmware:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": false,
+                  "cpe23Uri": "cpe:2.3:h:netapp:h300s:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            }
+          ],
+          "cpe_match": []
+        },
+        {
+          "operator": "AND",
+          "children": [
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": true,
+                  "cpe23Uri": "cpe:2.3:o:netapp:h500s_firmware:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": false,
+                  "cpe23Uri": "cpe:2.3:h:netapp:h500s:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            }
+          ],
+          "cpe_match": []
+        },
+        {
+          "operator": "AND",
+          "children": [
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": true,
+                  "cpe23Uri": "cpe:2.3:o:netapp:h700s_firmware:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": false,
+                  "cpe23Uri": "cpe:2.3:h:netapp:h700s:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            }
+          ],
+          "cpe_match": []
+        },
+        {
+          "operator": "AND",
+          "children": [
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": true,
+                  "cpe23Uri": "cpe:2.3:o:netapp:h300e_firmware:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": false,
+                  "cpe23Uri": "cpe:2.3:h:netapp:h300e:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            }
+          ],
+          "cpe_match": []
+        },
+        {
+          "operator": "AND",
+          "children": [
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": true,
+                  "cpe23Uri": "cpe:2.3:o:netapp:h500e_firmware:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": false,
+                  "cpe23Uri": "cpe:2.3:h:netapp:h500e:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            }
+          ],
+          "cpe_match": []
+        },
+        {
+          "operator": "AND",
+          "children": [
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": true,
+                  "cpe23Uri": "cpe:2.3:o:netapp:h700e_firmware:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": false,
+                  "cpe23Uri": "cpe:2.3:h:netapp:h700e:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            }
+          ],
+          "cpe_match": []
+        },
+        {
+          "operator": "AND",
+          "children": [
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": true,
+                  "cpe23Uri": "cpe:2.3:o:netapp:h410s_firmware:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "children": [],
+              "cpe_match": [
+                {
+                  "vulnerable": false,
+                  "cpe23Uri": "cpe:2.3:h:netapp:h410s:-:*:*:*:*:*:*:*",
+                  "cpe_name": []
+                }
+              ]
+            }
+          ],
+          "cpe_match": []
+        }
+      ]
+    },
+    "impact": {
+      "baseMetricV3": {
+        "cvssV3": {
+          "version": "3.1",
+          "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "attackVector": "LOCAL",
+          "attackComplexity": "LOW",
+          "privilegesRequired": "NONE",
+          "userInteraction": "NONE",
+          "scope": "UNCHANGED",
+          "confidentialityImpact": "HIGH",
+          "integrityImpact": "HIGH",
+          "availabilityImpact": "HIGH",
+          "baseScore": 8.4,
+          "baseSeverity": "HIGH"
+        },
+        "exploitabilityScore": 2.5,
+        "impactScore": 5.9
+      },
+      "baseMetricV2": {
+        "cvssV2": {
+          "version": "2.0",
+          "vectorString": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+          "accessVector": "LOCAL",
+          "accessComplexity": "LOW",
+          "authentication": "NONE",
+          "confidentialityImpact": "COMPLETE",
+          "integrityImpact": "COMPLETE",
+          "availabilityImpact": "COMPLETE",
+          "baseScore": 7.2
+        },
+        "severity": "HIGH",
+        "exploitabilityScore": 3.9,
+        "impactScore": 10.0,
+        "acInsufInfo": false,
+        "obtainAllPrivilege": false,
+        "obtainUserPrivilege": false,
+        "obtainOtherPrivilege": false,
+        "userInteractionRequired": false
+      }
+    },
+    "publishedDate": "2022-02-11T18:15Z",
+    "lastModifiedDate": "2024-09-04T01:00Z"
+  },
+  {
+    "cve": {
+      "data_type": "CVE",
+      "data_format": "MITRE",
+      "data_version": "4.0",
+      "CVE_data_meta": {
+        "ID": "CVE-2019-18389",
+        "ASSIGNER": "cve@mitre.org"
+      },
+      "problemtype": {
+        "problemtype_data": [
+          {
+            "description": [
+              {
+                "lang": "en",
+                "value": "CWE-787"
+              }
+            ]
+          }
+        ]
+      },
+      "references": {
+        "reference_data": [
+          {
+            "url": "https://gitlab.freedesktop.org/virgl/virglrenderer/merge_requests/314/diffs?commit_id=9c280a28651507e6ef87b17b90d47b6af3a4ab7d",
+            "name": "https://gitlab.freedesktop.org/virgl/virglrenderer/merge_requests/314/diffs?commit_id=9c280a28651507e6ef87b17b90d47b6af3a4ab7d",
+            "refsource": "MISC",
+            "tags": ["Patch", "Third Party Advisory"]
+          },
+          {
+            "url": "https://gitlab.freedesktop.org/virgl/virglrenderer/commit/cbc8d8b75be360236cada63784046688aeb6d921",
+            "name": "https://gitlab.freedesktop.org/virgl/virglrenderer/commit/cbc8d8b75be360236cada63784046688aeb6d921",
+            "refsource": "MISC",
+            "tags": ["Patch", "Third Party Advisory"]
+          },
+          {
+            "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1765577",
+            "name": "https://bugzilla.redhat.com/show_bug.cgi?id=1765577",
+            "refsource": "MISC",
+            "tags": ["Issue Tracking", "Patch", "Third Party Advisory"]
+          },
+          {
+            "url": "https://access.redhat.com/security/cve/cve-2019-18389",
+            "name": "Red Hat",
+            "refsource": "REDHAT",
+            "tags": ["Third Party Advisory"]
+          },
+          {
+            "url": "http://lists.opensuse.org/opensuse-security-announce/2020-01/msg00028.html",
+            "name": "openSUSE-SU-2020:0058",
+            "refsource": "SUSE",
+            "tags": ["Mailing List", "Third Party Advisory"]
+          },
+          {
+            "url": "https://lists.debian.org/debian-lts-announce/2022/12/msg00017.html",
+            "name": "[debian-lts-announce] 20221207 [SECURITY] [DLA 3232-1] virglrenderer security update",
+            "refsource": "MLIST",
+            "tags": ["Mailing List", "Third Party Advisory"]
+          }
+        ]
+      },
+      "description": {
+        "description_data": [
+          {
+            "lang": "en",
+            "value": "A heap-based buffer overflow in the vrend_renderer_transfer_write_iov function in vrend_renderer.c in virglrenderer through 0.8.0 allows guest OS users to cause a denial of service, or QEMU guest-to-host escape and code execution, via VIRGL_CCMD_RESOURCE_INLINE_WRITE commands."
+          }
+        ]
+      }
+    },
+    "configurations": {
+      "CVE_data_version": "4.0",
+      "nodes": [
+        {
+          "operator": "OR",
+          "children": [],
+          "cpe_match": [
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:a:virglrenderer_project:virglrenderer:*:*:*:*:*:*:*:*",
+              "versionEndIncluding": "0.8.0",
+              "cpe_name": []
+            }
+          ]
+        },
+        {
+          "operator": "OR",
+          "children": [],
+          "cpe_match": [
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:redhat:enterprise_linux:8.0:*:*:*:*:*:*:*",
+              "cpe_name": []
+            },
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:opensuse:leap:15.1:*:*:*:*:*:*:*",
+              "cpe_name": []
+            }
+          ]
+        },
+        {
+          "operator": "OR",
+          "children": [],
+          "cpe_match": [
+            {
+              "vulnerable": true,
+              "cpe23Uri": "cpe:2.3:o:debian:debian_linux:10.0:*:*:*:*:*:*:*",
+              "cpe_name": []
+            }
+          ]
+        }
+      ]
+    },
+    "impact": {
+      "baseMetricV3": {
+        "cvssV3": {
+          "version": "3.1",
+          "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "attackVector": "LOCAL",
+          "attackComplexity": "LOW",
+          "privilegesRequired": "LOW",
+          "userInteraction": "NONE",
+          "scope": "UNCHANGED",
+          "confidentialityImpact": "HIGH",
+          "integrityImpact": "HIGH",
+          "availabilityImpact": "HIGH",
+          "baseScore": 7.8,
+          "baseSeverity": "HIGH"
+        },
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.9
+      },
+      "baseMetricV2": {
+        "cvssV2": {
+          "version": "2.0",
+          "vectorString": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+          "accessVector": "LOCAL",
+          "accessComplexity": "LOW",
+          "authentication": "NONE",
+          "confidentialityImpact": "PARTIAL",
+          "integrityImpact": "PARTIAL",
+          "availabilityImpact": "PARTIAL",
+          "baseScore": 4.6
+        },
+        "severity": "MEDIUM",
+        "exploitabilityScore": 3.9,
+        "impactScore": 6.4,
+        "acInsufInfo": false,
+        "obtainAllPrivilege": false,
+        "obtainUserPrivilege": false,
+        "obtainOtherPrivilege": false,
+        "userInteractionRequired": false
+      }
+    },
+    "publishedDate": "2019-12-23T16:15Z",
+    "lastModifiedDate": "2023-02-02T18:52Z"
+  }
+]

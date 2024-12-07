@@ -1,0 +1,289 @@
+{
+    "CVE-2023-22527": {
+        "ID": "CVE-2023-22527",
+        "desc": "A template injection vulnerability on older versions of Confluence Data Center and Server allows an unauthenticated attacker to achieve RCE on an affected instance. Customers using an affected version must take immediate action.\n\nMost recent supported versions of Confluence Data Center and Server are not affected by this vulnerability as it was ultimately mitigated during regular version updates. However, Atlassian recommends that customers take care to install the latest version to protect their instances from non-critical vulnerabilities outlined in Atlassian\u2019s January Security Bulletin.",
+        "cpe": "a",
+        "attack_vec": {
+            "CVSS": "3.1",
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "C",
+            "I": "C",
+            "A": "C",
+            "Au": "N"
+        },
+        "type": 1,
+        "prob": 0.89
+    },
+    "CVE-2023-27603": {
+        "ID": "CVE-2023-27603",
+        "desc": "\n\n\nIn Apache Linkis <=1.3.1, due to the Manager module engineConn material upload does not check the zip path,\u00a0This is a Zip Slip issue, which will lead to a\u00a0potential RCE vulnerability.\n\n\nWe recommend users upgrade the version of Linkis to version 1.3.2.\n\n\n\n",
+        "cpe": "a",
+        "attack_vec": {
+            "CVSS": "3.1",
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "C",
+            "I": "C",
+            "A": "C",
+            "Au": "N"
+        },
+        "type": 1,
+        "prob": 0.82
+    },
+    "CVE-2023-35797": {
+        "ID": "CVE-2023-35797",
+        "desc": "Improper Input Validation vulnerability in Apache Software Foundation Apache Airflow Hive Provider.\nThis issue affects Apache Airflow Apache Hive Provider: before 6.1.1.\n\nBefore version 6.1.1 it was\u00a0possible to bypass the security check to RCE via\nprincipal parameter. For this to be\u00a0exploited it requires access to modifying the connection details.\n\nIt is recommended updating provider version to 6.1.1 in order to avoid this\u00a0vulnerability.\n\n",
+        "cpe": "a",
+        "attack_vec": {
+            "CVSS": "3.1",
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "C",
+            "I": "C",
+            "A": "C",
+            "Au": "N"
+        },
+        "type": 1,
+        "prob": 0.75
+    },
+    "CVE-2023-3935": {
+        "ID": "CVE-2023-3935",
+        "desc": "A heap buffer overflow vulnerability in Wibu CodeMeter Runtime network service up to version 7.60b allows an unauthenticated, remote attacker to achieve RCE and gain full access of the host system.",
+        "cpe": "a",
+        "attack_vec": {
+            "CVSS": "3.1",
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "C",
+            "I": "C",
+            "A": "C",
+            "Au": "N"
+        },
+        "type": 1,
+        "prob": 0.89
+    },
+    "CVE-2023-42793": {
+        "ID": "CVE-2023-42793",
+        "desc": "In JetBrains TeamCity before 2023.05.4 authentication bypass leading to RCE on TeamCity Server was possible",
+        "cpe": "a",
+        "attack_vec": {
+            "CVSS": "3.1",
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "C",
+            "I": "C",
+            "A": "C",
+            "Au": "N"
+        },
+        "type": 1,
+        "prob": 0.89
+    },
+    "CVE-2023-49070": {
+        "ID": "CVE-2023-49070",
+        "desc": "\nPre-auth RCE in Apache Ofbiz 18.12.09.\n\nIt's due to XML-RPC\u00a0no longer maintained\u00a0still present.\nThis issue affects Apache OFBiz: before 18.12.10.\u00a0\nUsers are recommended to upgrade to version 18.12.10\n\n",
+        "cpe": "a",
+        "attack_vec": {
+            "CVSS": "3.1",
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "C",
+            "I": "C",
+            "A": "C",
+            "Au": "N"
+        },
+        "type": 1,
+        "prob": 0.84
+    },
+    "CVE-2022-24697": {
+        "ID": "CVE-2022-24697",
+        "desc": "Kylin's cube designer function has a command injection vulnerability when overwriting system parameters in the configuration overwrites menu. RCE can be implemented by closing the single quotation marks around the parameter value of \u201c-- conf=\u201d to inject any operating system command into the command line parameters. This vulnerability affects Kylin 2 version 2.6.5 and earlier, Kylin 3 version 3.1.2 and earlier, and Kylin 4 version 4.0.1 and earlier.",
+        "cpe": "a",
+        "attack_vec": {
+            "CVSS": "3.1",
+            "AV": "N",
+            "AC": "L",
+            "PR": "N",
+            "UI": "N",
+            "S": "U",
+            "C": "C",
+            "I": "C",
+            "A": "C",
+            "Au": "N"
+        },
+        "type": 1,
+        "prob": 0.85
+    },
+    "CVE-2022-24760": {
+        "ID": "CVE-2022-24760",
+        "desc": "Parse Server is an open source http web server backend. In versions prior to 4.10.7 there is a Remote Code Execution (RCE) vulnerability in Parse Server. This vulnerability affects Parse Server in the default configuration with MongoDB. The main weakness that leads to RCE is the Prototype Pollution vulnerable code in the file `DatabaseController.js`, so it is likely to affect Postgres and any other database backend as well. This vulnerability has been confirmed on Linux (Ubuntu) and Windows. Users are advised to upgrade as soon as possible. The only known workaround is to manually patch your installation with code referenced at the source GHSA-p6h4-93qp-jhcm.",
+        "cpe": "a",
+        "attack_vec": {
+            "AV": "N",
+            "AC": "L",
+            "Au": "N",
+            "C": "P",
+            "I": "P",
+            "A": "P"
+        },
+        "type": 1,
+        "prob": 0.76
+    },
+    "CVE-2022-31625": {
+        "ID": "CVE-2022-31625",
+        "desc": "In PHP versions 7.4.x below 7.4.30, 8.0.x below 8.0.20, and 8.1.x below 8.1.7, when using Postgres database extension, supplying invalid parameters to the parametrized query may lead to PHP attempting to free memory using uninitialized data as pointers. This could lead to RCE vulnerability or denial of service.",
+        "cpe": "a",
+        "attack_vec": {
+            "AV": "N",
+            "AC": "M",
+            "Au": "N",
+            "C": "P",
+            "I": "P",
+            "A": "P"
+        },
+        "type": 1,
+        "prob": 0.86
+    },
+    "CVE-2021-27850": {
+        "ID": "CVE-2021-27850",
+        "desc": "A critical unauthenticated remote code execution vulnerability was found all recent versions of Apache Tapestry. The affected versions include 5.4.5, 5.5.0, 5.6.2 and 5.7.0. The vulnerability I have found is a bypass of the fix for CVE-2019-0195. Recap: Before the fix of CVE-2019-0195 it was possible to download arbitrary class files from the classpath by providing a crafted asset file URL. An attacker was able to download the file `AppModule.class` by requesting the URL `http://localhost:8080/assets/something/services/AppModule.class` which contains a HMAC secret key. The fix for that bug was a blacklist filter that checks if the URL ends with `.class`, `.properties` or `.xml`. Bypass: Unfortunately, the blacklist solution can simply be bypassed by appending a `/` at the end of the URL: `http://localhost:8080/assets/something/services/AppModule.class/` The slash is stripped after the blacklist check and the file `AppModule.class` is loaded into the response. This class usually contains the HMAC secret key which is used to sign serialized Java objects. With the knowledge of that key an attacker can sign a Java gadget chain that leads to RCE (e.g. CommonsBeanUtils1 from ysoserial). Solution for this vulnerability: * For Apache Tapestry 5.4.0 to 5.6.1, upgrade to 5.6.2 or later. * For Apache Tapestry 5.7.0, upgrade to 5.7.1 or later.",
+        "cpe": "a",
+        "attack_vec": {
+            "AV": "N",
+            "AC": "L",
+            "Au": "N",
+            "C": "C",
+            "I": "C",
+            "A": "C"
+        },
+        "type": 1,
+        "prob": 0.79
+    },
+    "CVE-2021-36161": {
+        "ID": "CVE-2021-36161",
+        "desc": "Some component in Dubbo will try to print the formated string of the input arguments, which will possibly cause RCE for a maliciously customized bean with special toString method. In the latest version, we fix the toString call in timeout, cache and some other places. Fixed in Apache Dubbo 2.7.13",
+        "cpe": "a",
+        "attack_vec": {
+            "AV": "N",
+            "AC": "L",
+            "Au": "N",
+            "C": "P",
+            "I": "P",
+            "A": "P"
+        },
+        "type": 1,
+        "prob": 0.75
+    },
+    "CVE-2021-40146": {
+        "ID": "CVE-2021-40146",
+        "desc": "A Remote Code Execution (RCE) vulnerability was discovered in the Any23 YAMLExtractor.java file and is known to affect Any23 versions < 2.5. RCE vulnerabilities allow a malicious actor to execute any code of their choice on a remote machine over LAN, WAN, or internet. RCE belongs to the broader class of arbitrary code execution (ACE) vulnerabilities.",
+        "cpe": "a",
+        "attack_vec": {
+            "AV": "N",
+            "AC": "L",
+            "Au": "N",
+            "C": "C",
+            "I": "C",
+            "A": "C"
+        },
+        "type": 1,
+        "prob": 0.87
+    },
+    "CVE-2021-22555": {
+        "ID": "CVE-2021-22555",
+        "desc": "A heap out-of-bounds write affecting Linux since v2.6.19-rc1 was discovered in net/netfilter/x_tables.c. This allows an attacker to gain privileges or cause a DoS (via heap memory corruption) through user name space",
+        "cpe": "o",
+        "attack_vec": {
+            "AV": "L",
+            "AC": "L",
+            "Au": "N",
+            "C": "P",
+            "I": "P",
+            "A": "P"
+        },
+        "type": 2,
+        "prob": 0.8
+    },
+    "CVE-2024-21626": {
+        "ID": "CVE-2024-21626",
+        "desc": "runc is a CLI tool for spawning and running containers on Linux according to the OCI specification. In runc 1.1.11 and earlier, due to an internal file descriptor leak, an attacker could cause a newly-spawned container process (from runc exec) to have a working directory in the host filesystem namespace, allowing for a container escape by giving access to the host filesystem (\"attack 2\"). The same attack could be used by a malicious image to allow a container process to gain access to the host filesystem through runc run (\"attack 1\"). Variants of attacks 1 and 2 could be also be used to overwrite semi-arbitrary host binaries, allowing for complete container escapes (\"attack 3a\" and \"attack 3b\"). runc 1.1.12 includes patches for this issue. ",
+        "cpe": "a",
+        "attack_vec": {
+            "CVSS": "3.1",
+            "AV": "L",
+            "AC": "L",
+            "PR": "N",
+            "UI": "R",
+            "S": "C",
+            "C": "C",
+            "I": "C",
+            "A": "C",
+            "Au": "N"
+        },
+        "type": 2,
+        "prob": 0.84
+    },
+    "CVE-2019-5736": {
+        "ID": "CVE-2019-5736",
+        "desc": "runc through 1.0-rc6, as used in Docker before 18.09.2 and other products, allows attackers to overwrite the host runc binary (and consequently obtain host root access) by leveraging the ability to execute a command as root within one of these types of containers: (1) a new container with an attacker-controlled image, or (2) an existing container, to which the attacker previously had write access, that can be attached with docker exec. This occurs because of file-descriptor mishandling, related to /proc/self/exe.",
+        "cpe": "a",
+        "attack_vec": {
+            "AV": "N",
+            "AC": "M",
+            "Au": "N",
+            "C": "C",
+            "I": "C",
+            "A": "C"
+        },
+        "type": 2,
+        "prob": 0.84
+    },
+    "CVE-2022-0185": {
+        "ID": "CVE-2022-0185",
+        "desc": "A heap-based buffer overflow flaw was found in the way the legacy_parse_param function in the Filesystem Context functionality of the Linux kernel verified the supplied parameters length. An unprivileged (in case of unprivileged user namespaces enabled, otherwise needs namespaced CAP_SYS_ADMIN privilege) local user able to open a filesystem that does not support the Filesystem Context API (and thus fallbacks to legacy handling) could use this flaw to escalate their privileges on the system.",
+        "cpe": "o",
+        "attack_vec": {
+            "AV": "L",
+            "AC": "L",
+            "Au": "N",
+            "C": "C",
+            "I": "C",
+            "A": "C"
+        },
+        "type": 2,
+        "prob": 0.77
+    },
+    "CVE-2019-18389": {
+        "ID": "CVE-2019-18389",
+        "desc": "A heap-based buffer overflow in the vrend_renderer_transfer_write_iov function in vrend_renderer.c in virglrenderer through 0.8.0 allows guest OS users to cause a denial of service, or QEMU guest-to-host escape and code execution, via VIRGL_CCMD_RESOURCE_INLINE_WRITE commands.",
+        "cpe": "a",
+        "attack_vec": {
+            "AV": "L",
+            "AC": "L",
+            "Au": "N",
+            "C": "P",
+            "I": "P",
+            "A": "P"
+        },
+        "type": 4,
+        "prob": 0.78
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "attacker": {
+        "C1_zuul": 1,
+        "C2_zuul": 1
+    },
+    "C1_zuul": {
+        "C1_eureka": 1,
+        "C1_VM1": 2
+    },
+    "C2_zuul": {
+        "C2_eureka": 1,
+        "C2_VM1": 2
+    },
+    "C1_eureka": {
+        "C1_servicec": 1,
+        "C1_serviceb": 1,
+        "C1_VM2": 2
+    },
+    "C1_VM1": {
+        "C1_servicec": 3,
+        "C1_rabbitmq": 3,
+        "C1_VM2": 1
+    },
+    "C2_eureka": {
+        "C2_servicec": 1,
+        "C2_springclouddashboard": 1,
+        "C2_VM1": 2
+    },
+    "C2_VM1": {
+        "C2_configservice": 3,
+        "C2_hystrixdashboard": 3,
+        "C2_VM2": 1
+    },
+    "C1_servicec": {
+        "C1_serviceb": 1,
+        "C1_rabbitmq": 1,
+        "C1_configservice": 1
+    },
+    "C1_serviceb": {
+        "C1_rabbitmq": 1,
+        "C1_configservice": 1,
+        "C1_VM2": 2
+    },
+    "C1_VM2": {
+        "C1_configservice": 3,
+        "PH2": 4
+    },
+    "C2_servicec": {
+        "C2_configservice": 1,
+        "C2_springclouddashboard": 1,
+        "C2_VM2": 2
+    },
+    "C2_springclouddashboard": {
+        "C2_VM2": 2
+    },
+    "C2_VM2": {
+        "PH2": 4
+    },
+    "PH2": {
+        "PH1": 1
+    },
+    "C1_configservice": {},
+    "C1_turbine": {},
+    "C1_springclouddashboard": {},
+    "C1_servicea": {},
+    "C1_hystrixdashboard": {},
+    "C1_rabbitmq": {},
+    "C2_configservice": {},
+    "C2_turbine": {},
+    "C2_serviceb": {},
+    "C2_servicea": {},
+    "C2_hystrixdashboard": {},
+    "C2_rabbitmq": {},
+    "PH1": {}
+}

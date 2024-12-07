@@ -1,0 +1,443 @@
+{
+    "C1_configservice": [],
+    "C1_servicec": [],
+    "C1_zuul": [
+      {
+        "ID": "CVE-2023-26482",
+        "desc": "Nextcloud server is an open source home cloud implementation. In affected versions a missing scope validation allowed users to create workflows which are designed to be only available for administrators. Some workflows are designed to be RCE by invoking defined scripts, in order to generate PDFs, invoking webhooks or running scripts on the server. Due to this combination depending on the available apps the issue can result in a RCE at the end. It is recommended that the Nextcloud Server is upgraded to 24.0.10 or 25.0.4. Users unable to upgrade should disable app `workflow_scripts` and `workflow_pdf_converter` as a mitigation.",
+        "cpe": "a",
+        "attack_vec": {
+          "CVSS": "3.1",
+          "AV": "N",
+          "AC": "L",
+          "PR": "L",
+          "UI": "N",
+          "S": "U",
+          "C": "C",
+          "I": "C",
+          "A": "C",
+          "Au": "S"
+        },
+        "prob": 0.7952,
+        "type": 1
+      }
+    ],
+    "C1_turbine": [],
+    "C1_springclouddashboard": [],
+    "C1_serviceb": [],
+    "C1_servicea": [
+      {
+        "ID": "CVE-2023-26482",
+        "desc": "Nextcloud server is an open source home cloud implementation. In affected versions a missing scope validation allowed users to create workflows which are designed to be only available for administrators. Some workflows are designed to be RCE by invoking defined scripts, in order to generate PDFs, invoking webhooks or running scripts on the server. Due to this combination depending on the available apps the issue can result in a RCE at the end. It is recommended that the Nextcloud Server is upgraded to 24.0.10 or 25.0.4. Users unable to upgrade should disable app `workflow_scripts` and `workflow_pdf_converter` as a mitigation.",
+        "cpe": "a",
+        "attack_vec": {
+          "CVSS": "3.1",
+          "AV": "N",
+          "AC": "L",
+          "PR": "L",
+          "UI": "N",
+          "S": "U",
+          "C": "C",
+          "I": "C",
+          "A": "C",
+          "Au": "S"
+        },
+        "prob": 0.7952,
+        "type": 1
+      }
+    ],
+    "C1_hystrixdashboard": [
+      {
+        "ID": "CVE-2023-50254",
+        "desc": "Deepin Linux's default document reader `deepin-reader` software suffers from a serious vulnerability in versions prior to 6.0.7 due to a design flaw that leads to remote command execution via crafted docx document. This is a file overwrite vulnerability. Remote code execution (RCE) can be achieved by overwriting files like .bash_rc, .bash_login, etc. RCE will be triggered when the user opens the terminal. Version 6.0.7 contains a patch for the issue.",
+        "cpe": "a",
+        "attack_vec": {
+          "CVSS": "3.1",
+          "AV": "L",
+          "AC": "L",
+          "PR": "N",
+          "UI": "R",
+          "S": "U",
+          "C": "C",
+          "I": "C",
+          "A": "C",
+          "Au": "N"
+        },
+        "prob": 0.39487359999999994,
+        "type": 1
+      }
+    ],
+    "C1_eureka": [
+      {
+        "ID": "CVE-2023-26482",
+        "desc": "Nextcloud server is an open source home cloud implementation. In affected versions a missing scope validation allowed users to create workflows which are designed to be only available for administrators. Some workflows are designed to be RCE by invoking defined scripts, in order to generate PDFs, invoking webhooks or running scripts on the server. Due to this combination depending on the available apps the issue can result in a RCE at the end. It is recommended that the Nextcloud Server is upgraded to 24.0.10 or 25.0.4. Users unable to upgrade should disable app `workflow_scripts` and `workflow_pdf_converter` as a mitigation.",
+        "cpe": "a",
+        "attack_vec": {
+          "CVSS": "3.1",
+          "AV": "N",
+          "AC": "L",
+          "PR": "L",
+          "UI": "N",
+          "S": "U",
+          "C": "C",
+          "I": "C",
+          "A": "C",
+          "Au": "S"
+        },
+        "prob": 0.7952,
+        "type": 1
+      }
+    ],
+    "C1_rabbitmq": [
+      {
+        "ID": "CVE-2023-52138",
+        "desc": "Engrampa is an archive manager for the MATE environment. Engrampa is found to be vulnerable to a Path Traversal vulnerability that can be leveraged to achieve full Remote Command Execution (RCE) on the target. While handling CPIO archives, the Engrampa Archive manager follows symlink, cpio by default will follow stored symlinks while extracting and the Archiver will not check the symlink location, which leads to arbitrary file writes to unintended locations. When the victim extracts the archive, the attacker can craft a malicious cpio or ISO archive to achieve RCE on the target system. This vulnerability was fixed in commit 63d5dfa.\n",
+        "cpe": "a",
+        "attack_vec": {
+          "CVSS": "3.1",
+          "AV": "N",
+          "AC": "L",
+          "PR": "N",
+          "UI": "R",
+          "S": "C",
+          "C": "C",
+          "I": "C",
+          "A": "C",
+          "Au": "N"
+        },
+        "prob": 0.9996799999999999,
+        "type": 1
+      }
+    ],
+    "C2_configservice": [
+      {
+        "ID": "CVE-2023-50254",
+        "desc": "Deepin Linux's default document reader `deepin-reader` software suffers from a serious vulnerability in versions prior to 6.0.7 due to a design flaw that leads to remote command execution via crafted docx document. This is a file overwrite vulnerability. Remote code execution (RCE) can be achieved by overwriting files like .bash_rc, .bash_login, etc. RCE will be triggered when the user opens the terminal. Version 6.0.7 contains a patch for the issue.",
+        "cpe": "a",
+        "attack_vec": {
+          "CVSS": "3.1",
+          "AV": "L",
+          "AC": "L",
+          "PR": "N",
+          "UI": "R",
+          "S": "U",
+          "C": "C",
+          "I": "C",
+          "A": "C",
+          "Au": "N"
+        },
+        "prob": 0.39487359999999994,
+        "type": 1
+      }
+    ],
+    "C2_servicec": [
+      {
+        "ID": "CVE-2023-26482",
+        "desc": "Nextcloud server is an open source home cloud implementation. In affected versions a missing scope validation allowed users to create workflows which are designed to be only available for administrators. Some workflows are designed to be RCE by invoking defined scripts, in order to generate PDFs, invoking webhooks or running scripts on the server. Due to this combination depending on the available apps the issue can result in a RCE at the end. It is recommended that the Nextcloud Server is upgraded to 24.0.10 or 25.0.4. Users unable to upgrade should disable app `workflow_scripts` and `workflow_pdf_converter` as a mitigation.",
+        "cpe": "a",
+        "attack_vec": {
+          "CVSS": "3.1",
+          "AV": "N",
+          "AC": "L",
+          "PR": "L",
+          "UI": "N",
+          "S": "U",
+          "C": "C",
+          "I": "C",
+          "A": "C",
+          "Au": "S"
+        },
+        "prob": 0.7952,
+        "type": 1
+      }
+    ],
+    "C2_zuul": [
+      {
+        "ID": "CVE-2023-5762",
+        "desc": "The Filr WordPress plugin before 1.2.3.6 is vulnerable from an RCE (Remote Code Execution) vulnerability, which allows the operating system to execute commands and fully compromise the server on behalf of a user with Author-level privileges.",
+        "cpe": "a",
+        "attack_vec": {
+          "CVSS": "3.1",
+          "AV": "N",
+          "AC": "L",
+          "PR": "L",
+          "UI": "N",
+          "S": "U",
+          "C": "C",
+          "I": "C",
+          "A": "C",
+          "Au": "S"
+        },
+        "prob": 0.7952,
+        "type": 1
+      }
+    ],
+    "C2_turbine": [],
+    "C2_springclouddashboard": [
+      {
+        "ID": "CVE-2023-5762",
+        "desc": "The Filr WordPress plugin before 1.2.3.6 is vulnerable from an RCE (Remote Code Execution) vulnerability, which allows the operating system to execute commands and fully compromise the server on behalf of a user with Author-level privileges.",
+        "cpe": "a",
+        "attack_vec": {
+          "CVSS": "3.1",
+          "AV": "N",
+          "AC": "L",
+          "PR": "L",
+          "UI": "N",
+          "S": "U",
+          "C": "C",
+          "I": "C",
+          "A": "C",
+          "Au": "S"
+        },
+        "prob": 0.7952,
+        "type": 1
+      }
+    ],
+    "C2_serviceb": [],
+    "C2_servicea": [],
+    "C2_hystrixdashboard": [],
+    "C2_eureka": [
+      {
+        "ID": "CVE-2023-27603",
+        "desc": "\n\n\nIn Apache Linkis <=1.3.1, due to the Manager module engineConn material upload does not check the zip path,\u00a0This is a Zip Slip issue, which will lead to a\u00a0potential RCE vulnerability.\n\n\nWe recommend users upgrade the version of Linkis to version 1.3.2.\n\n\n\n",
+        "cpe": "a",
+        "attack_vec": {
+          "CVSS": "3.1",
+          "AV": "N",
+          "AC": "L",
+          "PR": "N",
+          "UI": "N",
+          "S": "U",
+          "C": "C",
+          "I": "C",
+          "A": "C",
+          "Au": "N"
+        },
+        "prob": 0.9996799999999999,
+        "type": 1
+      }
+    ],
+    "C2_rabbitmq": [],
+    "C1_VM1": [
+      {
+        "ID": "CVE-2023-50254",
+        "desc": "Deepin Linux's default document reader `deepin-reader` software suffers from a serious vulnerability in versions prior to 6.0.7 due to a design flaw that leads to remote command execution via crafted docx document. This is a file overwrite vulnerability. Remote code execution (RCE) can be achieved by overwriting files like .bash_rc, .bash_login, etc. RCE will be triggered when the user opens the terminal. Version 6.0.7 contains a patch for the issue.",
+        "cpe": "a",
+        "attack_vec": {
+          "CVSS": "3.1",
+          "AV": "L",
+          "AC": "L",
+          "PR": "N",
+          "UI": "R",
+          "S": "U",
+          "C": "C",
+          "I": "C",
+          "A": "C",
+          "Au": "N"
+        },
+        "prob": 0.39487359999999994,
+        "type": 1
+      },
+      {
+        "ID": "CVE-2019-5736",
+        "desc": "runc through 1.0-rc6, as used in Docker before 18.09.2 and other products, allows attackers to overwrite the host runc binary (and consequently obtain host root access) by leveraging the ability to execute a command as root within one of these types of containers: (1) a new container with an attacker-controlled image, or (2) an existing container, to which the attacker previously had write access, that can be attached with docker exec. This occurs because of file-descriptor mishandling, related to /proc/self/exe.",
+        "cpe": "a",
+        "attack_vec": {
+          "AV": "N",
+          "AC": "M",
+          "Au": "N",
+          "C": "C",
+          "I": "C",
+          "A": "C"
+        },
+        "prob": 0.85888,
+        "type": 2
+      }
+    ],
+    "C1_VM2": [
+      {
+        "ID": "CVE-2023-49070",
+        "desc": "\nPre-auth RCE in Apache Ofbiz 18.12.09.\n\nIt's due to XML-RPC\u00a0no longer maintained\u00a0still present.\nThis issue affects Apache OFBiz: before 18.12.10.\u00a0\nUsers are recommended to upgrade to version 18.12.10\n\n",
+        "cpe": "a",
+        "attack_vec": {
+          "CVSS": "3.1",
+          "AV": "N",
+          "AC": "L",
+          "PR": "N",
+          "UI": "N",
+          "S": "U",
+          "C": "C",
+          "I": "C",
+          "A": "C",
+          "Au": "N"
+        },
+        "prob": 0.9996799999999999,
+        "type": 1
+      },
+      {
+        "ID": "CVE-2024-21626",
+        "desc": "runc is a CLI tool for spawning and running containers on Linux according to the OCI specification. In runc 1.1.11 and earlier, due to an internal file descriptor leak, an attacker could cause a newly-spawned container process (from runc exec) to have a working directory in the host filesystem namespace, allowing for a container escape by giving access to the host filesystem (\"attack 2\"). The same attack could be used by a malicious image to allow a container process to gain access to the host filesystem through runc run (\"attack 1\"). Variants of attacks 1 and 2 could be also be used to overwrite semi-arbitrary host binaries, allowing for complete container escapes (\"attack 3a\" and \"attack 3b\"). runc 1.1.12 includes patches for this issue. ",
+        "cpe": "a",
+        "attack_vec": {
+          "CVSS": "3.1",
+          "AV": "L",
+          "AC": "L",
+          "PR": "N",
+          "UI": "R",
+          "S": "C",
+          "C": "C",
+          "I": "C",
+          "A": "C",
+          "Au": "N"
+        },
+        "prob": 0.39487359999999994,
+        "type": 2
+      }
+    ],
+    "C2_VM1": [
+      {
+        "ID": "CVE-2023-52138",
+        "desc": "Engrampa is an archive manager for the MATE environment. Engrampa is found to be vulnerable to a Path Traversal vulnerability that can be leveraged to achieve full Remote Command Execution (RCE) on the target. While handling CPIO archives, the Engrampa Archive manager follows symlink, cpio by default will follow stored symlinks while extracting and the Archiver will not check the symlink location, which leads to arbitrary file writes to unintended locations. When the victim extracts the archive, the attacker can craft a malicious cpio or ISO archive to achieve RCE on the target system. This vulnerability was fixed in commit 63d5dfa.\n",
+        "cpe": "a",
+        "attack_vec": {
+          "CVSS": "3.1",
+          "AV": "N",
+          "AC": "L",
+          "PR": "N",
+          "UI": "R",
+          "S": "C",
+          "C": "C",
+          "I": "C",
+          "A": "C",
+          "Au": "N"
+        },
+        "prob": 0.9996799999999999,
+        "type": 1
+      },
+      {
+        "ID": "CVE-2021-22555",
+        "desc": "A heap out-of-bounds write affecting Linux since v2.6.19-rc1 was discovered in net/netfilter/x_tables.c. This allows an attacker to gain privileges or cause a DoS (via heap memory corruption) through user name space",
+        "cpe": "o",
+        "attack_vec": {
+          "AV": "L",
+          "AC": "L",
+          "Au": "N",
+          "C": "P",
+          "I": "P",
+          "A": "P"
+        },
+        "prob": 0.39487359999999994,
+        "type": 2
+      }
+    ],
+    "C2_VM2": [
+      {
+        "ID": "CVE-2023-50254",
+        "desc": "Deepin Linux's default document reader `deepin-reader` software suffers from a serious vulnerability in versions prior to 6.0.7 due to a design flaw that leads to remote command execution via crafted docx document. This is a file overwrite vulnerability. Remote code execution (RCE) can be achieved by overwriting files like .bash_rc, .bash_login, etc. RCE will be triggered when the user opens the terminal. Version 6.0.7 contains a patch for the issue.",
+        "cpe": "a",
+        "attack_vec": {
+          "CVSS": "3.1",
+          "AV": "L",
+          "AC": "L",
+          "PR": "N",
+          "UI": "R",
+          "S": "U",
+          "C": "C",
+          "I": "C",
+          "A": "C",
+          "Au": "N"
+        },
+        "prob": 0.39487359999999994,
+        "type": 1
+      },
+      {
+        "ID": "CVE-2021-22555",
+        "desc": "A heap out-of-bounds write affecting Linux since v2.6.19-rc1 was discovered in net/netfilter/x_tables.c. This allows an attacker to gain privileges or cause a DoS (via heap memory corruption) through user name space",
+        "cpe": "o",
+        "attack_vec": {
+          "AV": "L",
+          "AC": "L",
+          "Au": "N",
+          "C": "P",
+          "I": "P",
+          "A": "P"
+        },
+        "prob": 0.39487359999999994,
+        "type": 2
+      }
+    ],
+    "PH1": [
+      {
+        "ID": "CVE-2023-52138",
+        "desc": "Engrampa is an archive manager for the MATE environment. Engrampa is found to be vulnerable to a Path Traversal vulnerability that can be leveraged to achieve full Remote Command Execution (RCE) on the target. While handling CPIO archives, the Engrampa Archive manager follows symlink, cpio by default will follow stored symlinks while extracting and the Archiver will not check the symlink location, which leads to arbitrary file writes to unintended locations. When the victim extracts the archive, the attacker can craft a malicious cpio or ISO archive to achieve RCE on the target system. This vulnerability was fixed in commit 63d5dfa.\n",
+        "cpe": "a",
+        "attack_vec": {
+          "CVSS": "3.1",
+          "AV": "N",
+          "AC": "L",
+          "PR": "N",
+          "UI": "R",
+          "S": "C",
+          "C": "C",
+          "I": "C",
+          "A": "C",
+          "Au": "N"
+        },
+        "prob": 0.9996799999999999,
+        "type": 1
+      },
+      {
+        "ID": "CVE-2019-18389",
+        "desc": "A heap-based buffer overflow in the vrend_renderer_transfer_write_iov function in vrend_renderer.c in virglrenderer through 0.8.0 allows guest OS users to cause a denial of service, or QEMU guest-to-host escape and code execution, via VIRGL_CCMD_RESOURCE_INLINE_WRITE commands.",
+        "cpe": "a",
+        "attack_vec": {
+          "AV": "L",
+          "AC": "L",
+          "Au": "N",
+          "C": "P",
+          "I": "P",
+          "A": "P"
+        },
+        "prob": 0.39487359999999994,
+        "type": 4
+      }
+    ],
+    "PH2": [
+      {
+        "ID": "CVE-2023-27603",
+        "desc": "\n\n\nIn Apache Linkis <=1.3.1, due to the Manager module engineConn material upload does not check the zip path,\u00a0This is a Zip Slip issue, which will lead to a\u00a0potential RCE vulnerability.\n\n\nWe recommend users upgrade the version of Linkis to version 1.3.2.\n\n\n\n",
+        "cpe": "a",
+        "attack_vec": {
+          "CVSS": "3.1",
+          "AV": "N",
+          "AC": "L",
+          "PR": "N",
+          "UI": "N",
+          "S": "U",
+          "C": "C",
+          "I": "C",
+          "A": "C",
+          "Au": "N"
+        },
+        "prob": 0.9996799999999999,
+        "type": 1
+      },
+      {
+        "ID": "CVE-2019-18389",
+        "desc": "A heap-based buffer overflow in the vrend_renderer_transfer_write_iov function in vrend_renderer.c in virglrenderer through 0.8.0 allows guest OS users to cause a denial of service, or QEMU guest-to-host escape and code execution, via VIRGL_CCMD_RESOURCE_INLINE_WRITE commands.",
+        "cpe": "a",
+        "attack_vec": {
+          "AV": "L",
+          "AC": "L",
+          "Au": "N",
+          "C": "P",
+          "I": "P",
+          "A": "P"
+        },
+        "prob": 0.39487359999999994,
+        "type": 4
+      }
+    ]
+  }
+  
